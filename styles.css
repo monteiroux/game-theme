@@ -104,6 +104,18 @@ input:focus {
 
 /* Cabeçalho */
 
+#barraTopo {
+   display: none !important;
+}
+
+#cabecalho {
+   background: var(--black);
+   border-bottom: 1px solid rgba(255, 255, 255, .1);
+   position: sticky;
+   z-index: 10000;
+   top: 0;
+}
+
 #cabecalho .conteiner .conteudo-topo > .superior {
    display: none !important;
 }
@@ -264,6 +276,10 @@ a.h-user {
    width: fit-content;
 }
 
+.bn-t-price {
+   color: var(--brand-color)
+}
+
 .secao-banners .conteiner {
    padding: 16px;
 }
@@ -380,4 +396,36 @@ a.h-user {
 
 .listagem .listagem-item {
    margin: 0;
+   padding: 0;
+}
+
+.listagem .listagem-linha>ul {
+   margin-left: 0;
+}
+
+.listagem .titulo-categoria {
+   font-size: 28px;
+   background: none !important;
+   padding: 0 !important;
+   height: 60px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   border: 0;
+   margin: 48px 0 32px !important;
+}
+
+.listagem .vitrine-lancamento:after {
+   content: "Confira o que há de novo no mundo dos games.";
+   display: block;
+   font-size: 16px;
+   color: var(--white);
+}
+
+#listagemProdutos {
+   padding: 0 32px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
 }
