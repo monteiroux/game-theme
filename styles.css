@@ -397,6 +397,7 @@ a.h-user {
 .listagem .listagem-item {
    margin: 0;
    padding: 0;
+   transition: all .4s;
 }
 
 .listagem .listagem-linha>ul {
@@ -493,4 +494,38 @@ a.h-user {
 
 .listagem-item .preco-parcela, .listagem-item .desconto-a-vista {
    font-size: 14px;
+}
+
+.listagem .listagem-item:hover {
+   background: #fff;
+}
+
+.listagem .listagem-item:hover * {
+   color: #000!important;
+   font-weight: 500;
+}
+
+.listagem-item:hover .acoes-produto {
+   bottom: 24px;
+   right: 24px;
+   padding: 0;
+   border: 0;
+   width: fit-content;
+   left: auto;
+}
+
+.listagem .acoes-produto .botao-comprar {
+   width: 48px;
+   height: 48px;
+   font-size: 0;
+}
+
+.listagem .acoes-produto .botao-comprar i:before {
+   content: "";
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/add_shopping_cart.svg) center no-repeat;
+   background-size: 100%;
+}
+
+.listagem .acoes-produto .botao-comprar i {
+   margin: 0;
 }
