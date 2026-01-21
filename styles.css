@@ -1,5 +1,6 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+:root {
    --bg-color: #1E1E1E;
    --text-color: #FFFFFF;
    --brand-color: #B9F501;
@@ -8,5 +9,82 @@
    --grey: #4C4C4C;
 }
 
-<script src="https://symmagency.github.io/playce/functions.js"></script>
-<link rel="stylesheet" href="https://symmagency.github.io/playce/style.css">
+body {
+   background-color: var(--bg-store-color);
+   font-family: "Chakra Petch", sans-serif;
+}
+
+p,
+span,
+a,
+strong,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.titulo {
+   font-family: "Chakra Petch", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ------------------- Components */
+
+/* Botão */
+
+.botao {
+   background: var(--brand-color)!important;
+   color: var(--black)!important;
+   padding: 12px 24px;
+   border: 0;
+   border-radius: 0;
+   height: 48px!important;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   justify-content: center;
+}
+
+/* Input */
+
+input {
+   background: var(--black)!important;
+   color: var(--white)!important;
+   height: 48px!important;
+   padding: 0 16px!important;
+   border-radius: 0!important;
+   border: inset 1px solid rgba(255,255,255,.1)!important;
+}
+
+
+
+/* Banners */
+
+/* Começa texto do banner */
+.banner-text {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.bn-text-price {
+   display: flex;
+   flex-direction: column;
+   font-size: 24px;
+   color: #fff;
+   gap: 4px;
+}
+
+.bt-t-button {
+   width: fit-content;
+}
+
+/* Termina texto do banner */
