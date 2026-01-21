@@ -12,6 +12,7 @@
 body {
    background-color: var(--bg-store-color);
    font-family: "Chakra Petch", sans-serif;
+   background: var(--black);
 }
 
 p,
@@ -126,9 +127,10 @@ input {
    background: none;
 }
 
-.carrinho a {
+.carrinho > a {
    display: flex;
    align-items: center;
+   gap: 4px;
 }
 
 .carrinho>a i {
@@ -149,6 +151,7 @@ input {
    justify-content: center;
    font-size: 12px;
    font-weight: 600;
+   margin: 0;
 }
 
 .logo a {
@@ -255,6 +258,64 @@ a.h-user {
 
 .secao-banners .conteiner {
    padding: 16px;
+}
+
+.banner .flex-control-paging li a {
+   background: #fff;
+   opacity: .6;
+   width: 20px;
+   height: 3px;
+   border: 0;
+   position: relative;
+}
+
+.banner .flex-control-paging li a.flex-active {
+   width: 32px;
+   height: 3px;
+   background: var(--brand-color);
+   border: 0;
+   opacity: 1;
+}
+
+.flex-direction-nav .flex-prev {
+   position: relative;
+   left: 0;
+   opacity: 1;
+   margin: 0;
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/chevron-left.svg) center no-repeat;
+   width: 40px;
+   height: 40px;
+   background-color: var(--brand-color);
+}
+
+.flex-direction-nav .flex-next {
+   opacity: 1;
+   right: 0;
+   position: relative;
+   margin: 0;
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/chevron-right.svg) center no-repeat;
+   width: 40px;
+   height: 40px;
+   background-color: var(--brand-color);
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+   left: 0;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+   right: 0;
+}
+
+.banner .flex-control-nav {
+   width: max-content;
+   position: relative;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   right: 0;
+   bottom: 0;
 }
 
 /* Termina texto do banner */

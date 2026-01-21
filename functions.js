@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+// Ajustes gerais
+
 $('#cabecalho .conteudo-topo .inferior .span8.busca-mobile').after(`
     <div class="h-actions">
         <a href="/conta/login" class="h-user">
@@ -17,6 +19,7 @@ $('#cabecalho .conteudo-topo .inferior .span8.busca-mobile').after(`
     </div>
 `);
 
+$('.banner.cheio .flex-direction-nav').prepend($('.banner.cheio .flex-control-nav'));
 
 if ($(window).width() > 768) {
 //Desktop
