@@ -318,4 +318,18 @@ a.h-user {
    bottom: 0;
 }
 
+.banner .flex-direction-nav:before,
+.banner .flex-direction-nav:after {
+   display: none;
+}
+
+.banner .flex-direction-nav {
+   position: absolute;
+   right: 40px;
+   bottom: 40px;
+   display: flex;
+   align-items: center;
+   gap: 24px;
+}
+
 /* Termina texto do banner */
