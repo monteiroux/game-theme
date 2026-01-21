@@ -363,3 +363,21 @@ a.h-user {
 }
 
 /* Termina texto do banner */
+
+
+
+/* Listagem */
+
+.listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
+   height: fit-content;
+   width: 100%;
+}
+
+.listagem .imagem-produto img {
+   position: relative;
+   width: 100%;
+}
+
+.listagem .listagem-item {
+   margin: 0;
+}
