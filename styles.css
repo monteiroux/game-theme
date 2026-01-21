@@ -126,6 +126,8 @@ input:focus {
 #cabecalho .conteudo-topo .inferior .span4.hidden-phone {
    width: max-content;
    margin: 0;
+   display: flex;
+   align-items: center;
 }
 
 .carrinho {
@@ -336,6 +338,28 @@ a.h-user {
    display: flex;
    align-items: center;
    gap: 24px;
+}
+
+.mini-banner .modulo.span4:nth-child(3) {
+   display: none!important;
+}
+
+.mini-banner .modulo.span4 {
+   width: 100%;
+   margin: 0;
+}
+
+.mini-banner {
+   display: flex;
+   gap: 16px;
+}
+
+.mini-banner:before, .mini-banner:after {
+   display: none;
+}
+
+.mini-banner > div:not(.modulo.span4) {
+   display: none;
 }
 
 /* Termina texto do banner */
