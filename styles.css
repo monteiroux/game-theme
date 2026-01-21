@@ -1,0 +1,12 @@
+:root {
+
+   --bg-color: #1E1E1E;
+   --text-color: #FFFFFF;
+   --brand-color: #B9F501;
+   --black: #1E1E1E;
+   --white: #FFFFFF;
+   --grey: #4C4C4C;
+}
+
+<script src="https://symmagency.github.io/playce/functions.js"></script>
+<link rel="stylesheet" href="https://symmagency.github.io/playce/style.css">
