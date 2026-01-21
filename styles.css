@@ -67,6 +67,12 @@ input {
    padding: 0 16px!important;
    border-radius: 0!important;
    border: 1px solid rgba(255,255,255,.1)!important;
+   font-family: "Chakra Petch", sans-serif;
+}
+
+input:focus {
+   box-shadow: 0 0px 10px var(--brand-color)!important;
+   border: 1px solid var(--brand-color)!important;
 }
 
 /* --------------- ícones */
