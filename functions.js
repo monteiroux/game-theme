@@ -22,7 +22,6 @@ if ($(window).width() > 768) {
 //Desktop
 
 
-
 //Fim desktop
 } else {
 //Mobile    
