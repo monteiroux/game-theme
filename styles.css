@@ -148,6 +148,35 @@ input {
    font-weight: 600;
 }
 
+.logo a {
+   height: 60px;
+}
+
+.menu.superior {
+   margin: 0;
+   padding: 0;
+   flex: 1;
+   background: none;
+}
+
+.menu.superior .nivel-um {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+
+.menu.superior .nivel-um li {
+   border: 0;
+}
+
+.menu.superior .nivel-um li strong {
+   color: var(--white);
+}
+
+#cabecalho > .conteiner > .row-fluid > .span3 {
+   width: 170px;
+}
+
 /* Banners */
 
 /* Começa texto do banner */

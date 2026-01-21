@@ -20,8 +20,7 @@ $('#cabecalho .conteudo-topo .inferior .span8.busca-mobile').after(`
 
 if ($(window).width() > 768) {
 //Desktop
-
-
+    $('.conteudo-topo .inferior').prepend($('.menu.superior'));
 //Fim desktop
 } else {
 //Mobile    
