@@ -2,10 +2,10 @@ $(document).ready(function(){
 
 $('#cabecalho .conteudo-topo .inferior .span8.busca-mobile').after(`
     <div class="h-actions">
-        <div class="h-user">
+        <a href="/conta/login" class="h-user">
             <img src="https://cdn.awsli.com.br/2923/2923109/arquivos/user.svg" alt="Minha conta">
             <span>Entrar</span>
-        </div>
+        </a>
 
         <div class="h-search visible-phone">
             <img src="https://cdn.awsli.com.br/2923/2923109/arquivos/search.svg" alt="Buscar">
