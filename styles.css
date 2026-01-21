@@ -25,10 +25,12 @@ h3,
 h4,
 h5,
 h6,
-.titulo {
+.titulo,
+.cor-secundaria {
    font-family: "Chakra Petch", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  color: var(--white);
 }
 
 /* ------------------- Components */
@@ -107,6 +109,7 @@ input {
    display: flex;
    align-items: center;
    margin: 0;
+   gap: 32px;
 }
 
 .carrinho>a > span {
@@ -213,6 +216,18 @@ input {
    display: none;
 }
 
+a.h-user {
+   font-size: 14px;
+   color: var(--white);
+   font-weight: 600;
+   height: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+   text-decoration: none;
+}
+
 /* Banners */
 
 /* Começa texto do banner */
@@ -236,6 +251,10 @@ input {
 
 .bt-t-button {
    width: fit-content;
+}
+
+.secao-banners .conteiner {
+   padding: 16px;
 }
 
 /* Termina texto do banner */
