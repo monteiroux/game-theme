@@ -33,9 +33,15 @@ h6,
 
 /* ------------------- Components */
 
+/* Container geral */
+.conteiner {
+   max-width: 100%;
+   padding: 0 16px;
+}
+
 /* Botão */
 
-.botao {
+.botao, .btn {
    background: var(--brand-color)!important;
    color: var(--black)!important;
    padding: 12px 24px;
