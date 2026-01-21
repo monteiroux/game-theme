@@ -177,6 +177,29 @@ input {
    width: 170px;
 }
 
+#cabecalho .span8.busca-mobile {
+   max-width: 250px;
+   margin: 0;
+}
+
+.busca #form-buscar {
+   display: flex;
+   width: 100%;
+}
+
+.busca {
+   border: 0;
+   padding: 0;
+   background: none;
+}
+
+.busca .botao-busca {
+   right: 1px;
+   top: 1px;
+   background: transparent!important;
+   padding: 12px 16px;
+}
+
 /* Banners */
 
 /* Começa texto do banner */
