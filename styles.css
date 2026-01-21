@@ -66,7 +66,87 @@ input {
    border: inset 1px solid rgba(255,255,255,.1)!important;
 }
 
+/* --------------- ícones */
+.icon-shopping-cart::before {
+   content: "";
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/cart.svg) center no-repeat;
+   background-size: 100%;
+   width: 24px;
+   height: 24px;
+}
 
+.icon-user::before {
+   content: "";
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/user.svg) center no-repeat;
+   background-size: 100%;
+   width: 24px;
+   height: 24px;
+}
+
+.icon-search::before {
+   content: "";
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/search.svg) center no-repeat;
+   background-size: 100%;
+   width: 24px;
+   height: 24px;
+}
+
+/* --------------- Ajustes gerais */
+
+/* Cabeçalho */
+
+#cabecalho .conteiner .conteudo-topo > .superior {
+   display: none !important;
+}
+
+#cabecalho {
+   background: var(--black);
+}
+
+#cabecalho .conteudo-topo .inferior {
+   display: flex;
+   align-items: center;
+   margin: 0;
+}
+
+.carrinho>a > span {
+   display: none !important;
+}
+
+#cabecalho .conteudo-topo .inferior .span4.hidden-phone {
+   width: max-content;
+   margin: 0;
+}
+
+.carrinho {
+   border: 0;
+   background: none;
+}
+
+.carrinho a {
+   display: flex;
+   align-items: center;
+}
+
+.carrinho>a i {
+   width: 24px;
+   height: 24px;
+   background: none;
+   line-height: 24px;
+   font-size: 0;
+}
+
+.carrinho>a strong {
+   color: var(--black);
+   background: var(--brand-color);
+   width: 24px;
+   height: 24px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 12px;
+   font-weight: 600;
+}
 
 /* Banners */
 
