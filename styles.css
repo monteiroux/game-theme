@@ -429,3 +429,52 @@ a.h-user {
    flex-direction: column;
    gap: 24px;
 }
+
+.listagem .info-produto {
+   padding: 24px;
+}
+
+.listagem .preco-produto>div {
+   display: flex;
+   flex-direction: column;
+}
+
+.listagem .preco-produto>div .titulo {
+   margin: 0;
+}
+
+.listagem .preco-produto>div strong.titulo {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--brand-color);
+}
+
+.listagem .span3 .listagem-item .nome-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
+   max-height: 47px;
+   min-height: 40px;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   overflow: hidden;
+   white-space: normal;
+   text-overflow: ellipsis;
+   line-height: 20px;
+}
+
+.bandeiras-produto span {
+   border: 0;
+   box-shadow: none;
+   padding: 4px 8px;
+   line-height: 16px;
+   font-size: 12px;
+}
+
+.bandeiras-produto .bandeira-promocao {
+   background-color: var(--brand-color);
+   color: var(--black) !important;
+}
+
+.bandeiras-produto .adicionado-carrinho {
+   background-color: var(--black);
+   color: var(--white) !important;
+}
