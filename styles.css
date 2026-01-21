@@ -63,7 +63,7 @@ input {
    height: 48px!important;
    padding: 0 16px!important;
    border-radius: 0!important;
-   border: inset 1px solid rgba(255,255,255,.1)!important;
+   border: 1px solid rgba(255,255,255,.1)!important;
 }
 
 /* --------------- ícones */
@@ -198,6 +198,19 @@ input {
    top: 1px;
    background: transparent!important;
    padding: 12px 16px;
+}
+
+#cabecalho .conteudo-topo.span9 {
+   width: 100%;
+}
+
+#cabecalho > .conteiner > .row-fluid {
+   display: flex;
+   align-items: center;
+}
+
+#cabecalho .conteudo-topo .inferior:before, #cabecalho .conteudo-topo .inferior:after {
+   display: none;
 }
 
 /* Banners */
