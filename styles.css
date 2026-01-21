@@ -443,10 +443,18 @@ a.h-user {
    margin: 0;
 }
 
+.listagem .preco-produto>div .titulo {
+   margin: 0;
+   font-size: 14px;
+   opacity: .7;
+}
+
 .listagem .preco-produto>div strong.titulo {
-   font-size: 18px;
+   font-size: 22px;
    font-weight: 700;
    color: var(--brand-color);
+   margin-bottom: 8px;
+   opacity: 1;
 }
 
 .listagem .span3 .listagem-item .nome-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
@@ -477,4 +485,12 @@ a.h-user {
 .bandeiras-produto .adicionado-carrinho {
    background-color: var(--black);
    color: var(--white) !important;
+}
+
+.listagem-item .preco-parcela strong, .listagem-item .desconto-a-vista strong {
+   font-weight: normal;
+}
+
+.listagem-item .preco-parcela, .listagem-item .desconto-a-vista {
+   font-size: 14px;
 }
