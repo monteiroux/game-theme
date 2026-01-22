@@ -88,7 +88,7 @@ $('#listagemProdutos').before(`
 
 // Ativa o Slick Slider na lista de categorias
 $('.c-slide').slick({
-    slidesToShow: 7,
+    slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
     dots: false,
