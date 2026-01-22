@@ -21,6 +21,88 @@ $('#cabecalho .conteudo-topo .inferior .span8.busca-mobile').after(`
 
 $('.banner.cheio .flex-direction-nav').prepend($('.banner.cheio .flex-control-nav'));
 
+// Defina as variáveis das categorias (imagem, link e alt)
+var categorias = [
+    {
+        img: "https://cdn.awsli.com.br/2923/2923109/arquivos/cat-01.png",
+        link: "#",
+        alt: "Categoria 01"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2923/2923109/arquivos/cat-02.png",
+        link: "#",
+        alt: "Categoria 02"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2923/2923109/arquivos/cat-03.png",
+        link: "#",
+        alt: "Categoria 03"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2923/2923109/arquivos/cat-04.png",
+        link: "#",
+        alt: "Categoria 04"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2923/2923109/arquivos/cat-05.png",
+        link: "#",
+        alt: "Categoria 05"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2923/2923109/arquivos/cat-06.png",
+        link: "#",
+        alt: "Categoria 06"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2923/2923109/arquivos/cat-07.png",
+        link: "#",
+        alt: "Categoria 07"
+    }
+];
+
+// Montar os <li> dinamicamente usando as variáveis
+var categoriaLis = categorias.map(function(c){
+    return `<li class="c-item">
+        <a href="${c.link}">
+            <img src="${c.img}" alt="${c.alt}">
+        </a>
+    </li>`;
+}).join('');
+
+// Adiciona o bloco antes de #listagemProdutos
+$('#listagemProdutos').before(`
+<div class="c-slide-section">
+    <div class="c-slide-header">
+        <h2 class="c-slide-title" style="color: #fff; font-family: 'Chakra Petch',sans-serif; font-size: 18px; font-weight:500; margin:0 0 2px 0;">
+            Navegue por categoria
+        </h2>
+        <p class="c-slide-subtitle" style="color: #fff; font-size: 10px; line-height: 1;">
+            Escolha abaixo uma categoria para explorar nossos jogos
+        </p>
+    </div>
+    <ul class="c-slide">
+        ${categoriaLis}
+    </ul>
+</div>    
+`);
+
+// Ativa o Slick Slider na lista de categorias
+$('.c-slide').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }
+    ]
+});
+
 if ($(window).width() > 768) {
 //Desktop
     $('.conteudo-topo .inferior').prepend($('.menu.superior'));
