@@ -73,10 +73,10 @@ var categoriaLis = categorias.map(function(c){
 $('#listagemProdutos').before(`
 <div class="c-slide-section">
     <div class="c-slide-header">
-        <h2 class="c-slide-title" style="color: #fff; font-family: 'Chakra Petch',sans-serif; font-size: 18px; font-weight:500; margin:0 0 2px 0;">
+        <h2 class="c-slide-title">
             Navegue por categoria
         </h2>
-        <p class="c-slide-subtitle" style="color: #fff; font-size: 10px; line-height: 1;">
+        <p class="c-slide-subtitle">
             Escolha abaixo uma categoria para explorar nossos jogos
         </p>
     </div>
