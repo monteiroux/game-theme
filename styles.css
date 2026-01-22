@@ -529,3 +529,11 @@ a.h-user {
 .listagem .acoes-produto .botao-comprar i {
    margin: 0;
 }
+
+.listagem-item .acoes-produto {
+   right: 24px;
+   bottom: 44px;
+   left: auto;
+   padding: 0;
+   border: 0;
+}
