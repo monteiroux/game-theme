@@ -602,3 +602,60 @@ a.h-user {
 .c-slide-section {
    padding: 0 32px;
 }
+
+/* Página do produto */
+
+.produto .nome-produto {
+   font-size: 32px;
+   font-weight: 600;
+}
+
+.produto .codigo-produto * {
+   font-size: 12px;
+   font-weight: normal;
+}
+
+.atributos .atributo-comum b {
+   color: var(--brand-color);
+   font-weight: normal;
+}
+
+.atributos .atributo-comum * {
+   font-size: 14px;
+}
+
+.atributos ul li a {
+   box-shadow: none;
+   border: 1px solid var(--white);
+   height: 42px;
+   display: flex;
+   align-items: center;
+   padding: 12px 10px;
+   box-sizing: border-box;
+}
+
+.atributos ul li a * {
+   color: var(--white);
+   font-weight: normal;
+}
+
+.atributos ul li a:hover, .atributos ul li.active a {
+   border: 1px solid var(--brand-color);
+}
+
+.atributos ul li a:hover *, .atributos ul li.active a * {
+   color: var(--brand-color);
+}
+
+.atributos ul li.active a span:after {
+   content: "\f00c";
+   width: 16px;
+   height: 16px;
+   display: block;
+   font-family: 'FontAwesome-v4';
+   margin-left: 4px;
+}
+
+.atributos ul li.active a span {
+   display: flex;
+}
