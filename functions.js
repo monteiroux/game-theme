@@ -106,6 +106,11 @@ $('.c-slide').slick({
 if ($(window).width() > 768) {
 //Desktop
     $('.conteudo-topo .inferior').prepend($('.menu.superior'));
+
+    $('.produto')
+    .children()
+    .not('.row-fluid:first')
+    .appendTo('.conteiner-imagem');
 //Fim desktop
 } else {
 //Mobile    

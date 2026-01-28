@@ -659,3 +659,16 @@ a.h-user {
 .atributos ul li.active a span {
    display: flex;
 }
+
+.pagina-produto .produto > .row-fluid > .span5 {
+   max-width: 500px;
+   padding: 24px 56px;
+}
+
+.pagina-produto .produto > .row-fluid {
+   display: flex;
+}
+
+.pagina-produto .produto > .row-fluid > div {
+   flex: 1;
+}
