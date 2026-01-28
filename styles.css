@@ -663,12 +663,25 @@ a.h-user {
 .pagina-produto .produto > .row-fluid > .span5 {
    max-width: 500px;
    padding: 24px 56px;
+   position: sticky;
+   top: 100px;
 }
 
 .pagina-produto .produto > .row-fluid {
    display: flex;
+   align-items: flex-start;
 }
 
 .pagina-produto .produto > .row-fluid > div {
    flex: 1;
+}
+
+.produto .acoes-produto .comprar {
+   float: none;
+   width: 100%;
+   text-align: center;
+}
+
+.acoes-produto .preco-produto {
+   float: none;
 }
