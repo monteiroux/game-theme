@@ -815,6 +815,7 @@ a.h-user {
 #rodape>div:last-child .row-fluid > .span12 {
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
 #rodape>div:last-child .conteiner {
