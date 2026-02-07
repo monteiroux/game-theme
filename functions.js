@@ -21,6 +21,48 @@ $('#cabecalho .conteudo-topo .inferior .span8.busca-mobile').after(`
 
 $('.banner.cheio .flex-direction-nav').prepend($('.banner.cheio .flex-control-nav'));
 
+$('.selos li:first-child img').attr('src','https://cdn.awsli.com.br/2830/2830294/arquivos/site-protegido.svg');
+$('#rodape>div:last-child .conteiner .row-fluid div:not(.span12)').before(`<div class="feito-pixelset"><a href="https://www.pixelset.com.br/" class="pixel-logo" target="_blank"><img src="https://pages.greatpages.com.br/www.pixelset.com.br/1768577291/imagens/desktop/3485744_1_176857398507036064.svg" alt="Pixelset"></a></div>`)
+
+// Variáveis editáveis para as informações do atendimento
+var atendimentoTitulo = "Atendimento";
+var horariosAtendimento = [
+    "Segunda a sexta: 11:30 ás 22:00h",
+    "Sabado: 10:00h ás 18:00h",
+    "Domingo e Feriado: Fechado"
+];
+var whatsapp = {
+    icon: "https://cdn.awsli.com.br/2923/2923109/arquivos/whatsapp-branco.svg",
+    alt: "Whatsapp",
+    number: "(11) 98765-4321"
+};
+var email = {
+    icon: "https://cdn.awsli.com.br/2923/2923109/arquivos/email-branco.svg",
+    alt: "Email",
+    address: "contato@themegames.com.br"
+};
+
+var atendimentoHtml = `
+    <div class="span4 atendimento-rodape">
+        <span class="titulo">${atendimentoTitulo}</span>
+        <ul>
+            <li>${horariosAtendimento[0]}</li>
+            <li>${horariosAtendimento[1]}</li>
+            <li>${horariosAtendimento[2]}</li>
+            <li style="margin-top:10px;">
+                <img src="${whatsapp.icon}" alt="${whatsapp.alt}" style="vertical-align:middle; width:20px; margin-right:8px;">
+                ${whatsapp.number}
+            </li>
+            <li style="margin-top:5px;">
+                <img src="${email.icon}" alt="${email.alt}" style="vertical-align:middle; width:20px; margin-right:8px;">
+                <a href="mailto:${email.address}" style="color:inherit; text-decoration:none;">${email.address}</a>
+            </li>
+        </ul>
+    </div>
+`;
+
+$('#rodape .sobre-loja-rodape').replaceWith(atendimentoHtml);
+
 // Defina as variáveis das categorias (imagem, link e alt)
 var categorias = [
     {
