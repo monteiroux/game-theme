@@ -23,6 +23,44 @@ $('.banner.cheio .flex-direction-nav').prepend($('.banner.cheio .flex-control-na
 
 $('.selos li:first-child img').attr('src','https://cdn.awsli.com.br/2830/2830294/arquivos/site-protegido.svg');
 $('#rodape>div:last-child .conteiner .row-fluid div:not(.span12)').before(`<div class="feito-pixelset"><a href="https://www.pixelset.com.br/" class="pixel-logo" target="_blank"><img src="https://pages.greatpages.com.br/www.pixelset.com.br/1768577291/imagens/desktop/3485744_1_176857398507036064.svg" alt="Pixelset"></a></div>`)
+$('#rodape>div:last-child .row-fluid > div:last-child').attr('style','')
+
+
+    // Defina os números do WhatsApp como variáveis, agora com títulos
+var whatsappNumbers = [
+    { title: "Vendas", phone: "5511999999999", display: "(11) 99999-9999" },
+    { title: "Suporte", phone: "5511988888888", display: "(11) 98888-8888" },
+    { title: "Financeiro", phone: "5511977777777", display: "(11) 97777-7777" }
+];
+
+var whatsappDropdownHtml = `
+<div class="whatsapp-dropdown">
+    <button class="whatsapp-btn" type="button">
+        Fale conosco pelo WhatsApp
+    </button>
+    <ul class="whatsapp-dropdown-menu" style="display: none;">
+        ${whatsappNumbers.map(function(num) {
+            return `<li>
+                        <strong>${num.title}:</strong> <a href="https://wa.me/${num.phone}" target="_blank">${num.display}</a>
+                    </li>`;
+        }).join('')}
+    </ul>
+</div>
+`;
+
+$('#rodape .institucional .lista-redes').after(whatsappDropdownHtml);
+
+// Quando clicar no botão troca a classe do dropdown para abrir/fechar
+$(document).on('click', '.whatsapp-btn', function() {
+    var $dropdown = $(this).closest('.whatsapp-dropdown');
+    $dropdown.toggleClass('open');
+    var $menu = $dropdown.find('.whatsapp-dropdown-menu');
+    if ($dropdown.hasClass('open')) {
+        $menu.slideDown(150);
+    } else {
+        $menu.slideUp(150);
+    }
+});
 
 // Variáveis editáveis para as informações do atendimento
 var atendimentoTitulo = "Atendimento";
