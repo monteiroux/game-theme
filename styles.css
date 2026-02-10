@@ -867,3 +867,80 @@ ul.whatsapp-dropdown-menu li {
     display: flex;
     flex-direction: column;
 }
+
+/* ------------------- Produto */
+
+.breadcrumbs ul li a {
+	font-size: 12px;
+	color: #fff;
+	text-decoration: underline;
+}
+
+.breadcrumbs ul,
+.breadcrumbs li {
+	display: flex;
+	gap: 10px;
+}
+
+.breadcrumbs i {
+	display: none;
+}
+
+.produto .acoes-produto .preco-produto > div:first-child {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+.produto
+	.acoes-produto
+	.preco-produto:has(.preco-promocional)
+	.preco-venda.titulo {
+	color: #999;
+	font-size: 12px;
+}
+
+.produto .acoes-produto .preco-produto .preco-promocional.titulo {
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.produto .botao.botao-comprar {
+	height: 60px !important;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+.produto .botao.botao-comprar i {
+	display: none;
+}
+
+.produto .acoes-produto .comprar .disponibilidade-produto {
+	text-transform: uppercase;
+}
+
+.parcelas-produto .accordion {
+	background: rgba(255, 255, 255, 0.05);
+	padding: 0;
+}
+
+.parcelas-produto
+	.accordion
+	.accordion-group
+	.accordion-heading
+	.accordion-toggle,
+.parcelas-produto .accordion .accordion-group .accordion-inner {
+	padding: 16px 24px;
+}
+
+.parcelas-produto .accordion .accordion-group .accordion-body .accordion-inner {
+	padding: 16px 24px;
+}
+
+.cor-principal {
+	color: var(--brand-color);
+}
