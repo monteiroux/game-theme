@@ -561,7 +561,7 @@ a.h-user {
    margin: 0;
 }
 
-.c-slide .slick-arrow {
+.slick-arrow {
    width: 48px;
    height: 48px;
    background: var(--black);
@@ -572,13 +572,32 @@ a.h-user {
    z-index: 10;
    top: 50%;
    transform: translateY(-50%);
+   display: flex !important;
+   align-items: center;
+   justify-content: center;
 }
 
-.c-slide .slick-arrow.slick-prev {
+.slick-arrow.slick-next:before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/chevron-right-white.svg);
+   display: block;
+}
+
+.slick-arrow.slick-left:before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/chevron-left-white.svg);
+   display: block;
+}
+
+.slick-arrow.slick-prev {
    left: 0;
 }
 
-.c-slide .slick-arrow.slick-next {
+.slick-arrow.slick-next {
    right: 0;
 }
 
