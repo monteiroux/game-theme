@@ -585,7 +585,7 @@ a.h-user {
    display: block;
 }
 
-.slick-arrow.slick-left:before {
+.slick-arrow.slick-prev:before {
    content: "";
    width: 24px;
    height: 24px;
