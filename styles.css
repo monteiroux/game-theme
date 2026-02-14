@@ -1123,9 +1123,13 @@ div#modal-pagamento.ativo {
    background: none;
    color: var(--brand-color);
    text-decoration: underline;
-   margin-bottom: 24px;
+   margin: 16px 0;
    font-size: 15px;
    padding: 8px 0 !important;
+}
+
+.produto .codigo-produto {
+   display: none;
 }
 
 #formCalcularCep .btn:after {
