@@ -339,25 +339,25 @@ if ($(window).width() > 768) {
         }
     
     });
+    
+    $(window).on('load', function () {
 
-    $('.compre-junto__imagem img').each(function () {
-
-        var $img = $(this);
-        var src = $img.attr('src');
+        $('.compre-junto__imagem img').each(function () {
     
-        if (!src) return;
+            var $img = $(this);
+            var src = $img.attr('src');
+            if (!src) return;
     
-        // troca 150x150 por 300x300
-        var newSrc = src.replace('/150x150/', '/300x300/');
+            var newSrc = src.replace('/150x150/', '/300x300/');
     
-        if (newSrc !== src) {
-            $img.attr('src', newSrc);
+            if (newSrc !== src) {
+                $img.attr('src', newSrc);
     
-            // caso exista lazyload
-            if ($img.attr('data-src')) {
-                $img.attr('data-src', newSrc);
+                if ($img.attr('data-src')) {
+                    $img.attr('data-src', newSrc);
+                }
             }
-        }
+        });
     
     });
     
