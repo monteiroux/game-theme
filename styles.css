@@ -1206,3 +1206,7 @@ div#modal-pagamento.ativo {
 .produto .acoes-flutuante, .produto-compartilhar {
    display: none !important;
 }
+
+.pagina-produto #corpo .conteiner>div, .pagina-produto #corpo {
+   margin: 0 !important;
+}
