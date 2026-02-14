@@ -701,6 +701,7 @@ a.h-user {
    padding: 24px 56px;
    position: sticky;
    top: 100px;
+   margin: 0;
 }
 
 .pagina-produto .produto > .row-fluid {
@@ -1039,4 +1040,151 @@ ul.whatsapp-dropdown-menu li {
 }
 .barra-inicial .canais-contato ul li i {
    display: none;
+}
+
+.thumbs-vertical {
+   width: 90px;
+   padding: 48px;
+}
+
+.thumbs-vertical .elastislide-carousel ul li a {
+   border: 0;
+   width: 90px;
+   height: 90px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: none;
+   box-sizing: border-box;
+}
+
+.thumbs-vertical .elastislide-carousel ul li.active a {
+   border: 1px solid var(--brand-color);
+   opacity: 1;
+}
+
+.thumbs-vertical .elastislide-carousel ul li {
+   height: 90px;
+   margin-bottom: 12px;
+}
+
+#carouselImagem .elastislide-carousel ul li a span img {
+   position: relative;
+   width: 100%;
+   max-height: fit-content;
+}
+
+.modal {
+   background: #272727;
+   z-index: 999999;
+}
+
+.modal-backdrop {
+   z-index: 99999;
+}
+
+div#modal-pagamento {
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   align-items: center;
+   justify-content: center;
+   z-index: 99999999;
+   background: rgba(0,0,0,.6);
+   display: none;
+}
+
+div#modal-pagamento.ativo {
+  display: flex;
+}
+
+.modal-conteudo {
+   padding: 40px;
+   background: #272727;
+   width: 500px;
+}
+
+.modal-header {
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 24px;
+}
+
+.modal-header .fechar-modal {
+   background: none;
+   color: #fff;
+   font-size: 20px;
+}
+
+.btn-forma-pagamento {
+   background: none;
+   color: var(--brand-color);
+   text-decoration: underline;
+   margin-bottom: 24px;
+   font-size: 15px;
+   padding: 8px 0 !important;
+}
+
+#formCalcularCep .btn:after {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/check.svg )center no-repeat;
+}
+
+#formCalcularCep .btn {
+   background: none!important;
+   font-size: 0;
+   border: 0!important;
+   box-shadow: none!important;
+   position: absolute;
+   right: 0;
+   z-index: 3;
+}
+
+.cep .input-append {
+   position: relative;
+   width: 100%;
+   display: flex;
+}
+
+.cep .input-cep {
+   width: 100%;
+   box-sizing: border-box;
+   flex: 1;
+}
+
+.produto .conteiner-imagem {
+   text-align: left;
+   margin: 0;
+   padding: 48px;
+   border-right: 1px solid rgba(255,255,255,.1);
+}
+
+.produto .conteiner-imagem>div:first-child {
+   text-align: center;
+}
+
+.pagina-produto #corpo .conteiner {
+   padding: 0;
+}
+
+.pagina-produto .abas-custom .tab-content {
+   padding: 0;
+}
+
+.pagina-produto .abas-custom .tab-content {
+   padding: 0;
+}
+
+#descricao:before {
+   content: "Descrição";
+   font-size: 28px;
+   font-weight: bold;
+   color: var(--white);
+   margin-bottom: 32px;
+   display: block;
 }

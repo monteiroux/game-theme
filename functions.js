@@ -224,6 +224,30 @@ $('.c-slide').slick({
   }
 
 
+    // -----------------------------
+  // BOTÃO
+  // -----------------------------
+  $('.info-principal-produto').after(
+    '<button class="btn-forma-pagamento">Forma de pagamento</button>'
+  );
+
+  // -----------------------------
+  // MODAL
+  // -----------------------------
+  $('body').append(`
+    <div id="modal-pagamento">
+      <div class="modal-conteudo"><div class="modal-header"><h3>Formas de pagamento</h3><button class="fechar-modal">✕</button></div></div>
+    </div>
+  `);
+  
+  $('.parcelas-produto').appendTo('#modal-pagamento .modal-conteudo');
+  $(document).on('click', '.btn-forma-pagamento', function () {
+    $('#modal-overlay, #modal-pagamento').addClass('ativo');
+  });
+  $(document).on('click', '.fechar-modal, #modal-overlay', function () {
+    $('#modal-overlay, #modal-pagamento').removeClass('ativo');
+  });
+
 
 if ($(window).width() > 768) {
 //Desktop
