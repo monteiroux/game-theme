@@ -276,24 +276,45 @@ if ($(window).width() > 768) {
         }
     });
 
-    $('#carouselImagem .elastislide-carousel ul li a span img').each(function () {
+    $('.pagina-produto .miniaturas img').each(function () {
+
         var $img = $(this);
         var src = $img.attr('src');
-
+    
         if (!src) return;
-
-        // Troca 400x400 por 800x800
+    
+        // troca SOMENTE 64x50 por 100x100
         var newSrc = src.replace('/64x50/', '/100x100/');
-
+    
         if (newSrc !== src) {
-        $img.attr('src', newSrc);
-
-        // Se houver lazyload com data-src
-        if ($img.attr('data-src')) {
-            $img.attr('data-src', newSrc);
+    
+            // src principal
+            $img.attr('src', newSrc);
+    
+            // lazy load (se existir)
+            if ($img.attr('data-src')) {
+                $img.attr('data-src', newSrc);
+            }
+    
+            // atributos usados pela Loja Integrada
+            if ($img.attr('data-mediumimg')) {
+                $img.attr(
+                    'data-mediumimg',
+                    $img.attr('data-mediumimg').replace('/64x50/', '/100x100/')
+                );
+            }
+    
+            if ($img.attr('data-largeimg')) {
+                $img.attr(
+                    'data-largeimg',
+                    $img.attr('data-largeimg').replace('/64x50/', '/100x100/')
+                );
+            }
         }
-        }
+    
     });
+    
+
 //Fim desktop
 } else {
 //Mobile    
