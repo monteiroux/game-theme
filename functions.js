@@ -248,27 +248,6 @@ $('.c-slide').slick({
     $('#modal-overlay, #modal-pagamento').removeClass('ativo');
   });
 
-  $('.compre-junto__imagem img').each(function () {
-
-    var $img = $(this);
-    var src = $img.attr('src');
-
-    if (!src) return;
-
-    // troca 150x150 por 300x300
-    var newSrc = src.replace('/150x150/', '/300x300/');
-
-    if (newSrc !== src) {
-        $img.attr('src', newSrc);
-
-        // caso exista lazyload
-        if ($img.attr('data-src')) {
-            $img.attr('data-src', newSrc);
-        }
-    }
-
-});
-
 $('.produto .conteiner-imagem #abreZoom').remove();
 
 
@@ -358,6 +337,27 @@ if ($(window).width() > 768) {
                 );
             }
         }
+
+        $('.compre-junto__imagem img').each(function () {
+
+            var $img = $(this);
+            var src = $img.attr('src');
+        
+            if (!src) return;
+        
+            // troca 150x150 por 300x300
+            var newSrc = src.replace('/150x150/', '/300x300/');
+        
+            if (newSrc !== src) {
+                $img.attr('src', newSrc);
+        
+                // caso exista lazyload
+                if ($img.attr('data-src')) {
+                    $img.attr('data-src', newSrc);
+                }
+            }
+        
+        });
     
     });
     
