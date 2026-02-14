@@ -275,6 +275,25 @@ if ($(window).width() > 768) {
         }
         }
     });
+
+    $('#carouselImagem .elastislide-carousel ul li a span img').each(function () {
+        var $img = $(this);
+        var src = $img.attr('src');
+
+        if (!src) return;
+
+        // Troca 400x400 por 800x800
+        var newSrc = src.replace('/64x50/', '/100x100/');
+
+        if (newSrc !== src) {
+        $img.attr('src', newSrc);
+
+        // Se houver lazyload com data-src
+        if ($img.attr('data-src')) {
+            $img.attr('data-src', newSrc);
+        }
+        }
+    });
 //Fim desktop
 } else {
 //Mobile    
