@@ -1132,6 +1132,14 @@ div#modal-pagamento.ativo {
    display: none;
 }
 
+.pagina-produto .listagem > .titulo {
+   font-size: 28px;
+   font-weight: bold;
+   color: var(--white);
+   display: block;
+   margin: 48px 0 32px;
+}
+
 #formCalcularCep .btn:after {
    content: "";
    width: 20px;
@@ -1178,10 +1186,7 @@ div#modal-pagamento.ativo {
 
 .pagina-produto .abas-custom .tab-content {
    padding: 0;
-}
-
-.pagina-produto .abas-custom .tab-content {
-   padding: 0;
+   box-shadow: none;
 }
 
 #descricao:before {
@@ -1189,6 +1194,10 @@ div#modal-pagamento.ativo {
    font-size: 28px;
    font-weight: bold;
    color: var(--white);
-   margin-bottom: 32px;
+   margin: 48px 0 32px;
    display: block;
+}
+
+#descricao p {
+   font-size: 14px;
 }
