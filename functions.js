@@ -183,6 +183,46 @@ $('.c-slide').slick({
     ]
 });
 
+// --------- SLIDER
+
+  // remove comportamento antigo
+  $('#listagemProdutos .listagem-linha .flex-viewport').css({
+    overflow: 'visible'
+  });
+
+  $('#listagemProdutos .listagem-linha.flexslider').removeClass('flexslider');
+
+  const $carousel = $('#listagemProdutos .produtos-carrossel');
+
+  // evita iniciar duas vezes
+  if (!$carousel.hasClass('slick-initialized')) {
+
+    // remove estilos inline do flexslider
+    $carousel.removeAttr('style');
+    $carousel.find('li').removeAttr('style');
+
+    $carousel.slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      infinite: false,
+      arrows: true,
+      dots: true,
+      speed: 400,
+      draggable: true,
+      adaptiveHeight: false,
+
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+				}
+      ]
+    });
+
+  }
+
 
 
 if ($(window).width() > 768) {
