@@ -150,7 +150,7 @@ var categoriaLis = categorias.map(function(c){
 }).join('');
 
 // Adiciona o bloco antes de #listagemProdutos
-$('#listagemProdutos').before(`
+$('.pagina-inicial #listagemProdutos').before(`
 <div class="c-slide-section">
     <div class="c-slide-header">
         <h2 class="c-slide-title">
@@ -339,7 +339,7 @@ if ($(window).width() > 768) {
         }
     
     });
-    
+
     $(window).on('load', function () {
 
         $('.compre-junto__imagem img').each(function () {
