@@ -707,6 +707,7 @@ a.h-user {
 .pagina-produto .produto > .row-fluid {
    display: flex;
    align-items: flex-start;
+   padding: 0;
 }
 
 .pagina-produto .produto > .row-fluid > div {
@@ -1200,4 +1201,8 @@ div#modal-pagamento.ativo {
 
 #descricao p {
    font-size: 14px;
+}
+
+.produto .acoes-flutuante, .produto-compartilhar {
+   display: none !important;
 }
