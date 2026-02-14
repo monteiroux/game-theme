@@ -945,7 +945,7 @@ ul.whatsapp-dropdown-menu li {
 	font-size: 32px;
 }
 
-.produto .botao.botao-comprar {
+.produto .comprar > .botao.botao-comprar {
 	height: 60px !important;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -953,7 +953,7 @@ ul.whatsapp-dropdown-menu li {
 	text-shadow: none;
 }
 
-.produto .botao.botao-comprar i {
+.produto .comprar > .botao.botao-comprar i {
 	display: none;
 }
 
@@ -1164,6 +1164,11 @@ div#modal-pagamento.ativo {
    display: flex;
 }
 
+.cep label {
+   font-weight: normal;
+   font-size: 14px;
+}
+
 .cep .input-cep {
    width: 100%;
    box-sizing: border-box;
@@ -1209,4 +1214,185 @@ div#modal-pagamento.ativo {
 
 .pagina-produto #corpo .conteiner>div, .pagina-produto #corpo {
    margin: 0 !important;
+}
+
+.popover {
+	background: var(--black);
+}
+
+.popover * {
+	color: #fff;
+}
+
+.popover-title {
+	background: rgba(255, 255, 255, 0.1);
+	border: 0;
+	color: var(--brand-color);
+}
+
+.popover .arrow:after {
+	display: none !important;
+}
+
+.pagina-produto .produto .compre-junto__imagem img {
+	width: 100% !important;
+	height: inherit !important;
+}
+
+.produto .conteiner-imagem > div {
+	cursor: default;
+}
+
+/* Compre junto */
+
+.compre-junto__produto--principal .compre-junto__nome a,
+.compre-junto__produto--grade .compre-junto__nome a {
+	color: var(--white);
+}
+
+.compre-junto__preco--promocional,
+.compre-junto__preco--promocional:empty + .compre-junto__preco--regular {
+	font-size: 22px;
+	font-weight: 700;
+	color: var(--brand-color);
+	margin-bottom: 8px;
+	opacity: 1;
+}
+
+.compre-junto__atributo--lista {
+	width: 100%;
+	box-sizing: border-box;
+	background: var(--black);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	height: 44px;
+	color: #fff;
+	border-radius: 0;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+.compre-junto__atributo--lista {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url(https://cdn.awsli.com.br/2942/2942228/arquivos/chevron-down-white.svg)
+		95% no-repeat;
+	padding: 0 20px;
+}
+
+.compre-junto .slick-slide:not(.slick-active)::after {
+    background: linear-gradient(270deg, #1e1e1e, rgba(0, 0, 0, 0) 100%);
+}
+
+.compre-junto__resumo {
+    background: #303030;
+    border: 0;
+    height: fit-content;
+    padding: 24px;
+}
+
+.compre-junto__conteudo {
+    align-items: center;
+    gap: 20px
+}
+
+.compre-junto__resumo * {
+    color: #fff;
+}
+
+.compre-junto__comprar button {
+    background: var(--brand-color);
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: "Chakra Petch", sans-serif;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.slick-arrow.slick-disabled {
+    opacity: 0;
+}
+
+.compre-junto__produto--grade::before {
+    background: url(https://cdn.awsli.com.br/2942/2942228/arquivos/add.svg) center no-repeat;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 0!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    line-height: 100%;
+    left: -12px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.compre-junto .slick-arrow {
+    background: var(--black);
+}
+
+.compre-junto__selecionar input:checked::after {
+    left: 12px;
+    top: 6px;
+    border: solid var(--black);
+    border-width: 0 2px 2px 0;
+}
+
+.compre-junto__selecionar input::before {
+	display: none;
+}
+
+.compre-junto__selecionar input {
+    border: 0 !important;
+    width: 30px;
+    height: 30px !important;
+    background: var(--brand-color) !important;
+}
+
+.compre-junto__etiqueta {
+    border-radius: 0;
+    width: 100%;
+    left: 0;
+    transform: none;
+    top: 0;
+    background: var(--brand-color);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.compre-junto__produto--principal {
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 0;
+}
+
+.atributo-comum a.indisponivel {
+    background: var(--black);
+    opacity: .5;
+}
+
+.atributo-comum a.indisponivel span {
+    text-decoration: line-through;
+}
+
+.popup-sob-consulta {
+background: var(--black);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.popup-sob-consulta:after {
+		display: none;
+}
+
+.produto .principal .acoes-produto {
+		position: relative;
+}
+
+#consulte-form .consulte-fechar {
+    background: var(--black)!important;
+    color: var(--white)!important;
+    border: 1px solid rgba(255,255,255,.1);
 }
