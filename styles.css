@@ -1401,6 +1401,12 @@ background: var(--black);
    background: var(--black);
 }
 
+.compre-junto__titulo {
+   color: #fff;
+   font-size: 24px;
+   margin-top: 40px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1782px) {
    .compre-junto__produto--principal {
        display: none;
