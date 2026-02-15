@@ -33,6 +33,10 @@ h6,
   color: var(--white);
 }
 
+.cor-secundaria {
+   color: var(--white);
+}
+
 /* ------------------- Components */
 
 /* Container geral */
@@ -1773,3 +1777,181 @@ background: var(--black);
   .tabela-carrinho .formas-envio input[type="radio"] {
       max-height: 16px;
   }
+
+  .tabela-carrinho * {
+   color: var(--white);
+}
+
+.carrinho-checkout .conteiner-principal #corpo .conteiner {
+   box-shadow: none;
+}
+
+.checkout-alerta-seguro {
+   background: rgba(255,255,255,.1);
+   border: 1px solid rgba(255,255,255,.2);
+}
+
+.checkout-alerta-seguro .checkout-alerta-seguro-item .icon-ok, .checkout-alerta-seguro .checkout-alerta-seguro-tit {
+   color: var(--brand-color);
+}
+
+.identificacao .identificacao-inner {
+   background: none!important;
+}
+
+.carrinho-checkout .identificacao hr.sem-margem {
+   border: 0;
+}
+
+.identificacao .control-group input {
+   box-shadow: none;
+}
+
+.carrinho-checkout .identificacao .control-group {
+   display: flex;
+   gap: 20px;
+}
+
+.identificacao .email-box {
+   margin: 0!important;
+   width: 100%;
+   flex: 1;
+}
+
+.carrinho-checkout .identificacao .control-group:before, .carrinho-checkout .identificacao .control-group:after {
+   display: none;
+}
+
+.identificacao .control-group .submit-email.botao.principal {
+   position: relative;
+   padding: 0 20px;
+   max-width: fit-content;
+}
+
+.carrinho-checkout #cabecalho > .conteiner > .row-fluid > .span6 {
+   margin: 0;
+}
+
+.carrinho-checkout #cabecalho > .conteiner > .row-fluid {
+   justify-content: space-between;
+}
+
+.carrinho-checkout #cabecalho > .conteiner > .row-fluid:before, .carrinho-checkout #cabecalho > .conteiner > .row-fluid:after {
+   display: none;
+}
+
+.carrinho-checkout .atendimento, .clean-layout .atendimento {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+.carrinho-checkout .atendimento li, .clean-layout .atendimento li {
+   padding: 10px 20px;
+   box-sizing: border-box;
+   margin: 0;
+}
+
+.radio-conteiner input, .radio input[type="radio"], .checkbox input[type="checkbox"] {
+   max-height: 16px;
+}
+
+.li-box-payment {
+   background: #fff;
+}
+
+.campos-pedido .acao-editar button#finalizarCompra {
+   height: 80px!important;
+   font-weight: 600;
+   text-shadow: none;
+   font-family: "Chakra Petch", sans-serif;
+   text-transform: uppercase;
+   font-size: 20px;
+   width: 100%;
+}
+
+.campos-pedido .acao-editar button#finalizarCompra i {
+   display: none;
+}
+
+#formas-pagamento-wrapper .selo-ssl {
+   display: flex;
+   justify-content: center;
+}
+
+.dados-cadastro * {
+   color: #fff;
+}
+
+.control-group.erro .control-label, .control-group.erro .help-block, .control-group.erro .help-inline {
+   color: #ff9292;
+}
+
+.carrinho-checkout select {
+   background: var(--black) !important;
+   color: var(--white) !important;
+   height: 48px !important;
+   padding: 0 16px !important;
+   border-radius: 0 !important;
+   border: 1px solid rgba(255, 255, 255, .1) !important;
+   font-family: "Chakra Petch", sans-serif;
+}
+
+.formas .accordion-heading .forma-conteiner * {
+   color: var(--white);
+}
+
+.formas .accordion-heading .forma-conteiner .envio-preco {
+   color: var(--brand-color);
+   font-weight: 600;
+}
+
+.forma-envio .accordion-group {
+   border: 0;
+}
+
+.formas .accordion-heading {
+   background: rgba(255,255,255,.1);
+}
+
+.campos-pedido legend {
+   font-size: 16px;
+   font-weight: 600;
+   border: 0;
+}
+
+.campos-pedido legend i {
+   display: none;
+}
+
+.help-block {
+   color: var(--white);
+}
+
+textarea {
+   background: var(--black) !important;
+   color: var(--white) !important;
+   padding: 10px 16px !important;
+   border-radius: 0 !important;
+   border: 1px solid rgba(255, 255, 255, .1) !important;
+   font-family: "Chakra Petch", sans-serif;
+}
+
+div#exibirFormasPagamento .btn.btn-small {
+   background: none!important;
+   border: 1px solid rgba(255,255,255,.2);
+   text-shadow: none;
+   color: var(--white)!important;
+   font-size: 14px;
+   display: flex;
+   gap: 10px;
+}
+
+.li-box-payment .accordion-inner {background: #292929;}
+
+.li-box-payment .accordion-inner * {
+   font-size: 16px;
+}
+
+.li-box-payment .accordion-inner strong {
+}
