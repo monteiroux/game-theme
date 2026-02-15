@@ -250,6 +250,66 @@ $('.c-slide').slick({
 
 $('.produto .conteiner-imagem #abreZoom').remove();
 
+$('.pagina-categoria .conteudo > .titulo').prepend($('.pagina-categoria .breadcrumbs'));
+	$('.ordenar-listagem.topo > .row-fluid').prepend($('.pagina-categoria .conteudo > .titulo'));
+	$('.ordenar-listagem .row-fluid > .span6').removeClass('span6');
+	
+	
+	$(document).ready(function () {
+
+    /* ======================================================
+       1. CRIA BOTÃO FILTRAR
+    ====================================================== */
+
+    $('.ordenar-listagem.topo .row-fluid').append(`
+        <button class="btn btn-filtrar" data-toggle="modal" data-target="#modalFiltros">
+            Filtrar
+        </button>
+    `);
+
+
+    /* ======================================================
+       2. CRIA MODAL
+    ====================================================== */
+
+    $('body').append(`
+        <div id="modalFiltros" class="modal fade" tabindex="-1" style="display: none;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Filtros</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="modal-ordenar">
+                        	<h4>Ordenar por:</h4>
+                        </div>
+                        <div class="modal-filtros"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    `);
+
+
+    /* ======================================================
+       3. MOVE DROPDOWN ORDENAR PARA O MODAL
+    ====================================================== */
+
+    $('.ordenar-listagem.topo .dropdown-menu')
+        .appendTo('#modalFiltros .modal-ordenar');
+
+
+    /* ======================================================
+       4. MOVE TODOS OS FILTROS PARA O MODAL
+    ====================================================== */
+
+    $('.filtro-coluna').appendTo('#modalFiltros .modal-filtros');
+
+});
 
 if ($(window).width() > 768) {
 //Desktop

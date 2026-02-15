@@ -1428,3 +1428,305 @@ background: var(--black);
        margin: 0;
    }
    }
+
+   .ordenar-listagem.topo .row-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   
+   .ordenar-listagem.topo .row-fluid:before,
+   .ordenar-listagem.topo .row-fluid:after {
+      display: none;
+   }
+   
+   .ordenar-listagem .row-fluid > .titulo {
+      flex: 1;
+   }
+   
+   .pagina-categoria .secao-principal > .coluna {
+      display: none;
+   }
+   
+   .pagina-categoria .secao-principal > .conteudo.span9 {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+   }
+   
+   .pagina-categoria .secao-principal > .coluna {
+      display: none;
+   }
+   
+   .pagina-categoria .secao-principal > .conteudo.span9 {
+      width: 100%;
+   }
+   
+   #listagemProdutos {
+      padding: 0;
+   }
+   
+   .pagina-categoria .listagem .listagem-item {
+      margin: 0 !important;
+   }
+   
+   .pagina-categoria #corpo > .conteiner {
+      padding: 48px;
+   }
+   
+   .pagina-categoria .secao-banners .conteiner {
+      padding: 0;
+   }
+   
+   .pagina-categoria .banner.tarja img {
+      width: 100%;
+   }
+   
+   .pagina-categoria .breadcrumbs {
+      margin: 0;
+   }
+   
+   .pagina-categoria .conteudo .btn-filtrar {
+      background: none !important;
+      border: 1px solid var(--brand-color);
+      text-shadow: none;
+      color: var(--white) !important;
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 14px;
+   }
+   
+   .btn-filtrar:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/filter_alt.svg)
+         center no-repeat;
+      background-size: 100%;
+      margin-left: 10px;
+   }
+   
+   #modalFiltros.modal.fade.in {
+      right: 20px;
+      top: 20px;
+      left: auto;
+   }
+   
+   #modalFiltros.modal.fade {
+      height: calc(100vh - 40px);
+      top: 20px;
+      right: -25%;
+      left: auto;
+      transition: all 0.4s;
+      overflow-y: scroll;
+      border-radius: 0;
+   }
+   
+   #modalFiltros .modal-body {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 0 48px 48px;
+      max-height: fit-content;
+   }
+   
+   .filtro {
+      padding: 0;
+      box-shadow: none;
+      border: 0;
+   }
+   
+   .filtro.lista ul li label {
+      font-size: 16px;
+      padding: 4px 0;
+   }
+   
+   .filtro h4 {
+      font-size: 24px;
+      font-weight: bold;
+   }
+   
+   .modal-filtros {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+   
+   #modalFiltros .modal-title {
+      font-size: 24px;
+   }
+   
+   #modalFiltros .modal-header {
+      padding: 20px 48px;
+   }
+   
+   .modal .close {
+      color: #fff;
+      font-size: 0;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      margin: 0;
+   }
+   
+   .modal .close:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/close.svg)
+         center no-repeat;
+      background-size: 100%;
+      display: block;
+   }
+   
+   .modal-ordenar .dropdown-menu {
+      display: flex !important;
+      opacity: 1;
+      flex-direction: column;
+      position: relative;
+      background: none;
+      box-shadow: none;
+      border: 0;
+      padding: 0;
+      width: 100%;
+   }
+   
+   .modal-ordenar .dropdown-menu a {
+      color: var(--white);
+      font-size: 16px;
+      padding: 0;
+      line-height: 34px;
+   }
+   
+   .modal-ordenar .dropdown-menu a i {
+      display: none;
+   }
+   
+   .modal-ordenar h4 {
+      font-size: 24px;
+   }
+   
+   #modalFiltros .filtro.lista ul {
+      border: 0;
+   }
+   
+   .ordenar-listagem.topo > .row-fluid > .clearfix {
+      display: none;
+   }
+   
+   .filtro-lista li.active a {
+      background: var(--brand-color);
+   }
+   
+   .filtro.lista li.active {
+      background: var(--brand-color);
+      padding: 0 16px;
+   }
+   
+   .filtro.lista li.active a label {
+      color: var(--black);
+      font-weight: 600;
+   }
+   
+   .caixa-sombreada {
+      border: 0;
+      box-shadow: none;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+   }
+   
+   .cadastro-logar .control-group {
+      display: flex;
+      flex-direction: column;
+   }
+   
+   .cadastro-logar .form-horizontal .controls {
+      margin: 0;
+   }
+   
+   .cadastro-logar input {
+      width: 100% !important;
+      box-sizing: border-box;
+   }
+   
+   .cadastro legend {
+      border: 0;
+      font-size: 20px;
+      font-weight: normal;
+   }
+   
+   .cadastro legend i {
+      display: none;
+   }
+   
+   .cadastro-logar .botao {
+      box-sizing: border-box;
+      margin: 20px 0 0;
+      width: 100%;
+      font-family: 'Chakra Petch', sans-serif;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      text-shadow: none;
+   }
+   
+   .cadastro-logar .recuperar-senha {
+      margin: 20px 0 0;
+      font-size: 14px;
+      display: block;
+      text-decoration: underline;
+   }
+   
+   .cadastro-logar .recuperar-senha i {
+      display: none;
+   }
+   
+   .cabecalho-interno .titulo {
+      display: flex;
+      flex-direction: column;
+      font-size: 28px;
+      font-weight: bold;
+   }
+   
+   .pagina-login #corpo > .conteiner {
+      padding: 48px;
+   }
+   
+   
+   .pagina-carrinho #corpo .conteiner {
+       padding: 48px;
+   }
+   
+   .pagina-carrinho #corpo .conteiner {
+       padding: 48px;
+   }
+   
+   .finalizar-compra .acao-editar .span12 {
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+   }
+   
+   .finalizar-compra .span12 a.botao {
+       background: var(--black) !important;
+       color: var(--white) !important;
+       border: 1px solid rgba(255, 255, 255, .1);
+   }
+   
+   .finalizar-compra .span12 .botao.grande {
+       height: 60px!important;
+       text-transform: uppercase;
+       font-family: "Chakra Petch", sans-serif;
+       text-shadow: none;
+       font-weight: bold;
+       font-size: 18px;
+       padding: 0 40px;
+   }
+   
+   .finalizar-compra .span12 .botao.grande i {
+       display: none;
+   }
+   
+   .tabela-carrinho tr {
+       border: 0;
+   }
