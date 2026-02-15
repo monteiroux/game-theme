@@ -26,8 +26,7 @@ h3,
 h4,
 h5,
 h6,
-.titulo,
-.cor-secundaria {
+.titulo {
    font-family: "Chakra Petch", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -1730,3 +1729,47 @@ background: var(--black);
    .tabela-carrinho tr {
        border: 0;
    }
+
+   #formCalcularFrete > .control-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+  }
+  
+  #formCalcularFrete > .control-group .controls {
+      margin: 0;
+      display: flex;
+      align-items: center;
+  }
+  
+  #formCalcularFrete > .control-group:before, #formCalcularFrete > .control-group:after {
+      display: none;
+  }
+  
+  #formCalcularFrete > .control-group .controls > .input-append {
+      display: flex;
+  }
+  
+  #formCalcularFrete > .control-group .controls > .input-append #btn-frete {
+      box-sizing: border-box;
+      height: 50px;
+      border: 0;
+      border-radius: 0;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: 'Chakra Petch';
+      text-shadow: none;
+      font-weight: 600;
+  }
+  
+  #formCalcularFrete > .control-group .controls > .input-append #btn-frete i {
+      display: none;
+  }
+  
+  #formCalcularFrete > .control-group .controls > .input-append input {
+      margin: -1px 0 0;
+  }
+  
+  .tabela-carrinho .formas-envio input[type="radio"] {
+      max-height: 16px;
+  }
