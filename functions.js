@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 // Ajustes gerais
 
-$('#cabecalho .conteudo-topo .inferior').after(`
+$('#cabecalho .conteudo-topo .inferior  ').after(`
     <div class="h-actions">
         <a href="/conta/login" class="h-user">
             <img src="https://cdn.awsli.com.br/2923/2923109/arquivos/user.svg" alt="Minha conta">
@@ -425,6 +425,20 @@ if ($(window).width() > 768) {
 //Fim desktop
 } else {
 //Mobile    
+$('.menu.superior').append(`<div class="close-menu"><img src="https://cdn.awsli.com.br/2923/2923109/arquivos/close.svg" alt="fechar"/></div>`);
+
+
+$(document).on('click', '.close-menu', function () {
+  $('.menu.superior .nivel-um.active').removeClass('active');
+});
+
+$(document).on('click', '.h-menu', function () {
+  $('.menu.superior .nivel-um').addClass('active');
+});
+
+$(document).on('click', '.h-search', function () {
+  $('.conteudo-topo > .inferior').toggleClass('active');
+});
 
 //Fim mobile
 }
