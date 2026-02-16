@@ -2075,4 +2075,15 @@ a.atalho-menu {
    padding: 0;
 }
 
+.slick-arrow.slick-next {
+   right: -10px;
+}
+
+.slick-arrow.slick-prev {
+   left: -10px;   
+}
+
+.banner .flex-control-nav {
+   display: none;
+}
 }

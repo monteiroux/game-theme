@@ -183,24 +183,47 @@ $('.c-slide').slick({
     ]
 });
 
-// --------- SLIDER
+$(window).on('load', function () {
 
-  // remove comportamento antigo
-  $('#listagemProdutos .listagem-linha .flex-viewport').css({
-    overflow: 'visible'
-  });
-
-  $('#listagemProdutos .listagem-linha.flexslider').removeClass('flexslider');
-
-  const $carousel = $('#listagemProdutos .produtos-carrossel');
-
-  // evita iniciar duas vezes
-  if (!$carousel.hasClass('slick-initialized')) {
-
-    // remove estilos inline do flexslider
+    const $carousel = $('#listagemProdutos .produtos-carrossel');
+  
+    // -------------------------------------------------
+    // 1️⃣ DESTRÓI FLEXSLIDER COMPLETAMENTE
+    // -------------------------------------------------
+  
+    $carousel.find('.flex-viewport').each(function () {
+  
+      const $viewport = $(this);
+      const $ul = $viewport.find('ul').first();
+  
+      // move o UL para fora do wrapper do flexslider
+      $viewport.before($ul);
+  
+      // remove viewport criado pelo flexslider
+      $viewport.remove();
+    });
+  
+    // remove classes antigas
+    $('#listagemProdutos .listagem-linha')
+      .removeClass('flexslider');
+  
+    // remove estilos inline que quebram o slick
     $carousel.removeAttr('style');
+    $carousel.find('ul').removeAttr('style');
     $carousel.find('li').removeAttr('style');
-
+  
+    // -------------------------------------------------
+    // 2️⃣ EVITA DUPLA INICIALIZAÇÃO
+    // -------------------------------------------------
+  
+    if ($carousel.hasClass('slick-initialized')) {
+      $carousel.slick('unslick');
+    }
+  
+    // -------------------------------------------------
+    // 3️⃣ INICIA O SLICK LIMPO
+    // -------------------------------------------------
+  
     $carousel.slick({
       slidesToShow: 5,
       slidesToScroll: 1,
@@ -209,19 +232,22 @@ $('.c-slide').slick({
       dots: true,
       speed: 400,
       draggable: true,
+      swipe: true,
+      touchMove: true,
       adaptiveHeight: false,
-
+  
       responsive: [
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 2
           }
-				}
+        }
       ]
     });
-
-  }
+  
+  });
+  
 
 
     // -----------------------------
