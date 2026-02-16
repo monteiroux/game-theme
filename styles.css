@@ -2262,4 +2262,82 @@ a.atalho-menu {
 .pagina-produto .produto > .row-fluid {
    flex-direction: column;
 }
+
+.carrinho {
+   width: 40px;
+   height: 40px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   padding: 0;
+}
+
+.carrinho > a strong {
+   position: absolute;
+   top: 3px;
+   right: 0;
+   width: 16px;
+   height: 16px;
+}
+
+#cabecalho > .conteiner > .row-fluid > .span3 {
+   width: 200px;
+}
+
+.flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+   width: 48px;
+   height: 48px;
+   background: var(--black);
+   border: 1px solid var(--brand-color);
+   color: #fff;
+   font-size: 0;
+   position: absolute;
+   z-index: 10;
+   top: 50%;
+   transform: translateY(-50%);
+   display: flex !important;
+   align-items: center;
+   justify-content: center;
+}
+
+.flex-direction-nav .flex-next {
+   right: 0px;
+}
+
+.flex-direction-nav a.flex-next:before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/chevron-right-white.svg);
+   display: block;
+}
+
+.flex-direction-nav .flex-prev {
+   left: 0px;
+}
+
+.flex-direction-nav a.flex-prev:before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background: url(https://cdn.awsli.com.br/2923/2923109/arquivos/chevron-left-white.svg);
+   display: block;
+}
+
+.acoes-produto-responsiva .tag-comprar {
+   display: none;
+}
+
+.listagem .listagem-item {
+   margin: 0!important;
+}
+
+.listagem .listagem-linha li {
+   margin: 10px;
+}
+
+.listagem .titulo-categoria {
+   margin: 20px 0 0!important;
+}
+
 }

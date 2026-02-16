@@ -443,6 +443,8 @@ $(document).on('click', '.h-search', function () {
   $('.conteudo-topo > .inferior').toggleClass('active');
 });
 
+$('.h-menu').before($('#cabecalho .conteudo-topo .inferior .span4.hidden-phone > .carrinho'));
+
 //Fim mobile
 }
 
