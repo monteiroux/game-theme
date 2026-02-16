@@ -2597,20 +2597,40 @@ a.atalho-menu {
      z-index: 1;
      position: relative;
  }
- 
- .produto .miniaturas {
-     gap: 10px;
-     display: flex;
-     justify-content: center;
- }
- 
- .produto .miniaturas > li {
-     width: fit-content!important;
- }
 
- .produto .miniaturas:after {
-   display: none;
+ div#buy-together-position1 {
+	width: 100%;
+	box-sizing: border-box;
 }
+
+.compre-junto {
+	width: 100%;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+.pagina-produto .produto .compre-junto__imagem img {
+	width: fit-content !important;
+}
+
+.compre-junto__produto--principal::after {
+	color: #607081;
+	background: url(https://cdn.awsli.com.br/2942/2942228/arquivos/add.svg) center
+		no-repeat;
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+	font-size: 0 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--black);
+	line-height: 100%;
+	border: 0;
+	box-sizing: border-box;
+	right: -30px !important;
+}
+
 
 }
 
