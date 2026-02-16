@@ -1460,10 +1460,6 @@ background: var(--black);
       width: 100%;
    }
    
-   #listagemProdutos {
-      padding: 0;
-   }
-   
    .pagina-categoria .listagem .listagem-item {
       margin: 0 !important;
    }
@@ -2119,6 +2115,10 @@ div#exibirFormasPagamento .btn.btn-small {
 
 
 @media screen and (max-width: 768px) {
+
+   #listagemProdutos {
+      padding: 0;
+   }
 
    #barraNewsletter.posicao-rodape {
       display: block!important;
