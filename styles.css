@@ -2608,6 +2608,10 @@ a.atalho-menu {
      width: fit-content!important;
  }
 
+ .produto .miniaturas:after {
+   display: none;
+}
+
 }
 
 @media screen and (min-width: 768px) {
