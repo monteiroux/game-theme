@@ -184,32 +184,23 @@ $('.c-slide').slick({
 });
 
 // --------- SLIDER
-$(window).on('load', function () {
 
-    // pega o UL REAL que contém os produtos
-    const $carousel = $('#listagemProdutos .produtos-carrossel')
-      .find('.flex-viewport > ul');
-  
-    if (!$carousel.length) return;
-  
-    // evita dupla inicialização
-    if ($carousel.hasClass('slick-initialized')) {
-      $carousel.slick('unslick');
-    }
-  
-    // limpa apenas estilos problemáticos
-    $carousel.css({
-      width: '',
-      marginLeft: ''
-    });
-  
-    $carousel.find('li').css({
-      width: '',
-      float: '',
-      display: ''
-    });
-  
-    // inicia slick no elemento correto
+  // remove comportamento antigo
+  $('#listagemProdutos .listagem-linha .flex-viewport').css({
+    overflow: 'visible'
+  });
+
+  $('#listagemProdutos .listagem-linha.flexslider').removeClass('flexslider');
+
+  const $carousel = $('#listagemProdutos .produtos-carrossel');
+
+  // evita iniciar duas vezes
+  if (!$carousel.hasClass('slick-initialized')) {
+
+    // remove estilos inline do flexslider
+    $carousel.removeAttr('style');
+    $carousel.find('li').removeAttr('style');
+
     $carousel.slick({
       slidesToShow: 5,
       slidesToScroll: 1,
@@ -218,22 +209,19 @@ $(window).on('load', function () {
       dots: true,
       speed: 400,
       draggable: true,
-      swipe: true,
-      touchMove: true,
       adaptiveHeight: false,
-  
+
       responsive: [
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 2
           }
-        }
+				}
       ]
     });
-  
-  });
-  
+
+  }
 
 
     // -----------------------------
