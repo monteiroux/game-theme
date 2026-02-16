@@ -3,7 +3,7 @@ $(document).ready(function(){
 // Ajustes gerais
 
 $('#cabecalho .conteudo-topo .inferior  ').after(`
-    <div class="h-actions">
+    <div class="h-actions visible-phone">
         <a href="/conta/login" class="h-user">
             <img src="https://cdn.awsli.com.br/2923/2923109/arquivos/user.svg" alt="Minha conta">
             <span>Entrar</span>
