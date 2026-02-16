@@ -2333,11 +2333,15 @@ a.atalho-menu {
 }
 
 .listagem .listagem-linha li {
-   margin: 10px;
+   margin: 0px;
 }
 
 .listagem .titulo-categoria {
    margin: 20px 0 0!important;
+}
+
+.listagem .listagem-item {
+   padding: 5px;
 }
 
 }
