@@ -1955,3 +1955,15 @@ div#exibirFormasPagamento .btn.btn-small {
 
 .li-box-payment .accordion-inner strong {
 }
+
+@media screen and (max-width: 768px) {
+
+   .atalhos-mobile {
+      display: none !important;
+  }
+
+  #cabecalho {
+   padding: 0;
+}
+
+}
