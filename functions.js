@@ -70,12 +70,12 @@ var horariosAtendimento = [
     "Domingo e Feriado: Fechado"
 ];
 var whatsapp = {
-    icon: "https://cdn.awsli.com.br/2923/2923109/arquivos/whatsapp-branco.svg",
+    icon: "https://cdn.awsli.com.br/2923/2923109/arquivos/whatsapp.svg",
     alt: "Whatsapp",
     number: "(11) 98765-4321"
 };
 var email = {
-    icon: "https://cdn.awsli.com.br/2923/2923109/arquivos/email-branco.svg",
+    icon: "https://cdn.awsli.com.br/2923/2923109/arquivos/email.svg",
     alt: "Email",
     address: "contato@themegames.com.br"
 };
