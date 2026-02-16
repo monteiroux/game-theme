@@ -2086,4 +2086,31 @@ a.atalho-menu {
 .banner .flex-control-nav {
    display: none;
 }
+
+#rodape .institucional .conteiner {
+   padding: 16px;
+}
+
+.institucional > .conteiner > .row-fluid {
+   flex-direction: column;
+}
+
+#rodape>div:last-child .row-fluid {
+   flex-direction: column;
+}
+
+#rodape .pagamento-selos {
+   padding: 16px;
+}
+
+#rodape>div:last-child {
+   padding: 16px!important;
+}
+
+#formCalcularFrete > .control-group, 
+#formCalcularFrete > .control-group .controls, 
+.finalizar-compra .acao-editar .span12,
+.pagina-produto .produto > .row-fluid {
+   flex-direction: column;
+}
 }
