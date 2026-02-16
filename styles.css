@@ -2531,7 +2531,7 @@ a.atalho-menu {
 
 #modalFiltros.modal.fade {
    top: 0;
-   right: 0;
+   right: -150%;
    height: 100dvh!important;
    position: fixed;
 }
