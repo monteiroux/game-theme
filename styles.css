@@ -2113,6 +2113,9 @@ div#exibirFormasPagamento .btn.btn-small {
    display: block;
 }
 
+.breadcrumbs {
+   border: 0;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -2484,8 +2487,14 @@ a.atalho-menu {
 }
 
 .finalizar-compra .span12 .botao.grande {
-   margin: 0 0 20px;
    width: 100%;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 9999999999999;
+   padding: 40px;
+   margin: 0;
 }
 
 .finalizar-compra .span12 a.botao {
@@ -2631,6 +2640,44 @@ a.atalho-menu {
 	right: -30px !important;
 }
 
+.pagina-conta .secao-principal {
+   display: flex;
+   flex-direction: column-reverse;
+}
+
+.pagina-conta .row-fluid .coluna {
+   display: block;
+}
+
+.pagina-conta .secao-principal {
+   display: flex;
+   flex-direction: column-reverse;
+}
+
+.abas-conta li.active a {
+   background: rgba(255,255,255,.1);
+}
+
+.abas-conta li a {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.caixa-info {
+   border: 0;
+   box-shadow: none;
+}
+
+.breadcrumbs {
+   border: 0;
+}
+
+.pagina-conta .acao-editar {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 20px;
+}
 
 }
 
@@ -2646,3 +2693,4 @@ a.atalho-menu {
    }
 
 }
+
