@@ -516,14 +516,7 @@ a.h-user {
    font-size: 14px;
 }
 
-.listagem .listagem-item:hover {
-   background: #fff;
-}
 
-.listagem .listagem-item:hover .info-produto * {
-   color: #000!important;
-   font-weight: 500;
-}
 
 .listagem-item:hover .acoes-produto {
    bottom: 24px;
@@ -2083,7 +2076,6 @@ div#exibirFormasPagamento .btn.btn-small {
     border: 0;
 }
 
-
 .listagem .flex-direction-nav .flex-next, .listagem .flex-direction-nav .flex-prev {
    width: 48px;
    height: 48px;
@@ -2198,10 +2190,12 @@ div#exibirFormasPagamento .btn.btn-small {
    padding: 20px;
    display: none;
    transform: translateY(-50%);
+   height: 100dvh;
+   align-items: center;
 }
 
 .menu.superior .nivel-um.active + .close-menu {
-     display: block;
+     display: flex;
 }
 
 .h-menu, .h-search, .h-user {
@@ -2344,5 +2338,22 @@ a.atalho-menu {
 .listagem .listagem-item {
    padding: 5px;
 }
+
+.c-slide-header {
+   margin: 0 0 20px !important;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+
+   .listagem .listagem-item:hover {
+      background: #fff;
+   }
+   
+   .listagem .listagem-item:hover .info-produto * {
+      color: #000!important;
+      font-weight: 500;
+   }
 
 }
