@@ -311,6 +311,9 @@ $('.pagina-categoria .conteudo > .titulo').prepend($('.pagina-categoria .breadcr
 
 });
 
+$('.pagina-inicial .vitrine-24033240').before($('.secao-banners .conteiner .banner.hidden-phone'));
+$('#barraNewsletter .componente .texto-newsletter').prepend($('#barraNewsletter .componente .titulo'));
+
 if ($(window).width() > 768) {
 //Desktop
     $('.conteudo-topo .inferior').prepend($('.menu.superior'));
