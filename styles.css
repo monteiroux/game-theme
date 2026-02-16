@@ -2300,11 +2300,11 @@ a.atalho-menu {
    justify-content: center;
 }
 
-.flex-direction-nav .flex-next {
+.listagem .flex-direction-nav .flex-next {
    right: 0px;
 }
 
-.flex-direction-nav a.flex-next:before {
+.listagem .flex-direction-nav a.flex-next:before {
    content: "";
    width: 24px;
    height: 24px;
@@ -2312,11 +2312,11 @@ a.atalho-menu {
    display: block;
 }
 
-.flex-direction-nav .flex-prev {
+.listagem .flex-direction-nav .flex-prev {
    left: 0px;
 }
 
-.flex-direction-nav a.flex-prev:before {
+.listagem .flex-direction-nav a.flex-prev:before {
    content: "";
    width: 24px;
    height: 24px;
