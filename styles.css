@@ -2577,6 +2577,37 @@ a.atalho-menu {
    padding: 0 16px;
 }
 
+.comprar-fixo {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   z-index: 99999999;
+   padding: 12px;
+   background: #fff;
+   box-shadow: 0 -4px 20px rgba(0,0,0,.15);
+ }
+ 
+ .produto .acoes-produto .comprar.comprar-fixo {
+     box-sizing: border-box;
+     background: var(--black);
+ }
+ 
+ .pagina-produto .produto > .row-fluid:first-child {
+     z-index: 1;
+     position: relative;
+ }
+ 
+ .produto .miniaturas {
+     gap: 10px;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .produto .miniaturas > li {
+     width: fit-content!important;
+ }
+
 }
 
 @media screen and (min-width: 768px) {
