@@ -200,6 +200,7 @@ input:focus {
 
 .menu.superior .nivel-um li strong {
    color: var(--white);
+   padding: 5px 0;
 }
 
 #cabecalho > .conteiner > .row-fluid > .span3 {
