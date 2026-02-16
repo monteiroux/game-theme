@@ -183,47 +183,33 @@ $('.c-slide').slick({
     ]
 });
 
+// --------- SLIDER
 $(window).on('load', function () {
 
-    const $carousel = $('#listagemProdutos .produtos-carrossel');
+    // pega o UL REAL que contém os produtos
+    const $carousel = $('#listagemProdutos .produtos-carrossel')
+      .find('.flex-viewport > ul');
   
-    // -------------------------------------------------
-    // 1️⃣ DESTRÓI FLEXSLIDER COMPLETAMENTE
-    // -------------------------------------------------
+    if (!$carousel.length) return;
   
-    $carousel.find('.flex-viewport').each(function () {
-  
-      const $viewport = $(this);
-      const $ul = $viewport.find('ul').first();
-  
-      // move o UL para fora do wrapper do flexslider
-      $viewport.before($ul);
-  
-      // remove viewport criado pelo flexslider
-      $viewport.remove();
-    });
-  
-    // remove classes antigas
-    $('#listagemProdutos .listagem-linha')
-      .removeClass('flexslider');
-  
-    // remove estilos inline que quebram o slick
-    $carousel.removeAttr('style');
-    $carousel.find('ul').removeAttr('style');
-    $carousel.find('li').removeAttr('style');
-  
-    // -------------------------------------------------
-    // 2️⃣ EVITA DUPLA INICIALIZAÇÃO
-    // -------------------------------------------------
-  
+    // evita dupla inicialização
     if ($carousel.hasClass('slick-initialized')) {
       $carousel.slick('unslick');
     }
   
-    // -------------------------------------------------
-    // 3️⃣ INICIA O SLICK LIMPO
-    // -------------------------------------------------
+    // limpa apenas estilos problemáticos
+    $carousel.css({
+      width: '',
+      marginLeft: ''
+    });
   
+    $carousel.find('li').css({
+      width: '',
+      float: '',
+      display: ''
+    });
+  
+    // inicia slick no elemento correto
     $carousel.slick({
       slidesToShow: 5,
       slidesToScroll: 1,
