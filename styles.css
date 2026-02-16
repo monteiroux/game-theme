@@ -2518,6 +2518,45 @@ a.atalho-menu {
    position: fixed;
 }
 
+.resumo-compra .tabela-carrinho .padding-preco * {
+   text-align: center;
+}
+
+.resumo-compra .tabela-carrinho .padding-preco>div {
+   padding: 0;
+}
+
+.resumo-compra .tabela-carrinho .text-right {
+   text-align: center;
+}
+
+.resumo-compra .tabela-carrinho td.conteiner-preco * {
+   text-align: center;
+}
+
+.resumo-compra .tabela-carrinho td {
+   width: 100%;
+   text-align: center;
+   box-sizing: border-box;
+}
+
+.resumo-compra .tabela-carrinho .produto-info {
+   width: 100%;
+}
+
+.resumo-compra .tabela-carrinho td.conteiner-qtd div {
+   width: fit-content;
+   margin: 0 auto;
+}
+
+.carrinho-checkout #cabecalho > .conteiner > .row-fluid {
+   justify-content: center;
+}
+
+.caixa-sombreada {
+   padding: 24px;
+}
+
 }
 
 @media screen and (min-width: 768px) {
