@@ -2118,11 +2118,15 @@ div#exibirFormasPagamento .btn.btn-small {
 
    #rodape .span12.visible-phone {
       display: none !important;
-  }
+   }
 
-  #listagemProdutos .banner.hidden-phone {
-   display: block !important;
-}
+   #listagemProdutos .banner.hidden-phone {
+      display: block !important;
+   }
+
+   .banner.tarja img {
+      width: 100%;
+   }
 
    .c-slide .slick-track {
       gap: 10px;
@@ -2499,7 +2503,7 @@ a.atalho-menu {
 
 #carouselImagem .flex-viewport {
    margin: 0;
-   padding: 0 24px;
+   padding: 0;
    box-sizing: border-box;
 }
 
@@ -2567,6 +2571,10 @@ a.atalho-menu {
 
 .caixa-sombreada {
    padding: 24px;
+}
+
+#carouselImagem {
+   padding: 0 16px;
 }
 
 }
