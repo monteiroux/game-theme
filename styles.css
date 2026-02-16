@@ -2116,6 +2116,18 @@ div#exibirFormasPagamento .btn.btn-small {
 
 @media screen and (max-width: 768px) {
 
+   #rodape .span12.visible-phone {
+      display: none !important;
+  }
+
+  #listagemProdutos .banner.hidden-phone {
+   display: block !important;
+}
+
+   .c-slide .slick-track {
+      gap: 10px;
+   }
+
    #listagemProdutos {
       padding: 0;
    }
