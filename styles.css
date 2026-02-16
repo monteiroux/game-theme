@@ -2395,6 +2395,13 @@ a.atalho-menu {
 .produto-thumbs .elastislide-carousel ul li a {
    border: 0;
    margin: 0;
+   background: none;
+}
+
+.produto-thumbs .elastislide-carousel ul li a span {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .pagina-produto .produto > .row-fluid > .span5 {
