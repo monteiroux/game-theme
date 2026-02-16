@@ -2343,6 +2343,42 @@ a.atalho-menu {
    margin: 0 0 20px !important;
 }
 
+.slick-arrow {
+   width: 40px;
+   height: 40px;
+}
+
+.listagem .flex-direction-nav .flex-next, .listagem .flex-direction-nav .flex-prev {
+   width: 40px;
+   height: 40px;
+}
+
+.mini-banner.hidden-phone {
+   display: block!important;
+}
+
+.banner-text {
+   padding: 20px;
+   gap: 10px;
+}
+
+.banner .flex-direction-nav {
+   right: 20px;
+   bottom: 20px;
+}
+
+.bn-t-image {
+   max-width: 100px;
+}
+
+.bn-text-price {
+   font-size: 18px;
+}
+
+.bt-t-button i {
+   display: none;
+}
+
 }
 
 @media screen and (min-width: 768px) {
