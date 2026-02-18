@@ -445,35 +445,37 @@ $(document).on('click', '.h-search', function () {
 
 $('.h-menu').before($('#cabecalho .conteudo-topo .inferior .span4.hidden-phone > .carrinho'));
 
-//botao fixo padgina de produto
+const botaoComprar = document.querySelector('.produto .acoes-produto .comprar');
 
-    const $botao = $('.produto .acoes-produto .comprar');
-  
-    if (!$botao.length) return;
-  
-    function verificarViewport() {
-  
-      const rect = $botao[0].getBoundingClientRect();
-  
-      // verifica se o botão está visível na tela
-      const estaVisivel =
-        rect.top < window.innerHeight &&
-        rect.bottom > 0;
-  
-      if (!estaVisivel) {
-        $botao.addClass('comprar-fixo');
-      } else {
-        $botao.removeClass('comprar-fixo');
-      }
+if (!botaoComprar) return;
+
+// cria um elemento "sentinela" na posição original do botão
+const sentinel = document.createElement('div');
+sentinel.style.height = "1px";
+
+botaoComprar.parentNode.insertBefore(sentinel, botaoComprar);
+
+const observer = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+
+    // Se NÃO estiver visível na tela → fixa
+    if (!entry.isIntersecting) {
+      botaoComprar.classList.add('comprar-fixo');
+    } 
+    // Se voltou para viewport → normal
+    else {
+      botaoComprar.classList.remove('comprar-fixo');
     }
-  
-    // executa ao scroll e resize
-    $(window).on('scroll resize', verificarViewport);
-  
-    // executa ao carregar
-    verificarViewport();
 
-  
+  });
+
+}, {
+  root: null,
+  threshold: 0
+});
+
+observer.observe(sentinel);
 
 //Fim mobile
 }
