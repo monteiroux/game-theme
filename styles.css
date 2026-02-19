@@ -551,6 +551,12 @@ a.h-user {
    border: 0;
 }
 
+.listagem .preco-produto>div .titulo {
+   margin: 0;
+   font-size: 14px;
+   opacity: .7;
+}
+
 /* Slide de categorias */
 
 .c-item a {
