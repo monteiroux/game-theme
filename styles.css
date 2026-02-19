@@ -1423,6 +1423,25 @@ background: var(--black);
    margin-top: 40px;
 }
 
+.carrinho-checkout .identificacao .login-data .control-group {
+   display: flex;
+   flex-direction: column;
+}
+
+.carrinho-checkout .identificacao .login-data .control-group .senha-box {
+   order: 1;
+   margin: 0;
+}
+
+.carrinho-checkout .identificacao .login-data .control-group * {
+   order: 2;
+}
+
+.identificacao .control-group .botao.principal {
+   width: 100%;
+   max-width: 100%;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1782px) {
    .compre-junto__produto--principal {
        display: none;
@@ -1814,6 +1833,8 @@ background: var(--black);
 
 .identificacao .control-group input {
    box-shadow: none;
+   box-sizing: border-box;
+   width: 100%;
 }
 
 .carrinho-checkout .identificacao .control-group {
