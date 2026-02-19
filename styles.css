@@ -1829,7 +1829,7 @@ background: var(--black);
 
 .carrinho-checkout .identificacao hr.sem-margem {
    border: 0;
-}
+}.pagina-conta .secao-principal
 
 .identificacao .control-group input {
    box-shadow: none;
@@ -2733,9 +2733,16 @@ a.atalho-menu {
    display: block;
 }
 
-.pagina-conta .secao-principal {
+.breadcrumbs {
+   border: 0;
+}
+
+.pagina-conta .acao-editar {
    display: flex;
-   flex-direction: column-reverse;
+   gap: 10px;
+   margin-bottom: 20px;
+}
+
 }
 
 .abas-conta li.active a {
@@ -2751,18 +2758,6 @@ a.atalho-menu {
 .caixa-info {
    border: 0;
    box-shadow: none;
-}
-
-.breadcrumbs {
-   border: 0;
-}
-
-.pagina-conta .acao-editar {
-   display: flex;
-   gap: 10px;
-   margin-bottom: 20px;
-}
-
 }
 
 @media screen and (min-width: 768px) {
