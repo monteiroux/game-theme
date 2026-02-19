@@ -2222,9 +2222,33 @@ div#exibirFormasPagamento .btn.btn-small {
 
 .alert {
    background: rgba(255, 255, 255, .1);
+   text-shadow: none;
+   font-size: 16px;
+}
+
+.menu-simples li a {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.menu-simples li a i {
+   font-size: 17px;
+}
+
+.menu-simples li {
+   padding: 2px 0;
+}
+
+.conta-menu .nome-usuario i {
+   display: none;
 }
 
 @media screen and (max-width: 768px) {
+
+   .pagina-login #corpo > .conteiner {
+      padding: 16px;
+  }
 
    #rodape .span12.visible-phone {
       display: none !important;
