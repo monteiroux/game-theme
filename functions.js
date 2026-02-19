@@ -325,6 +325,93 @@ $('.pagina-categoria .conteudo > .titulo').prepend($('.pagina-categoria .breadcr
 $('.pagina-inicial .vitrine-24033240').before($('.secao-banners .conteiner .banner.hidden-phone'));
 $('#barraNewsletter .componente .texto-newsletter').prepend($('#barraNewsletter .componente .titulo'));
 
+$(function () {
+	/* =========================
+     🎬 VIDEOS EDITÁVEIS
+  ==========================*/
+	const videosShorts = [
+		'bIY1jAbcnKs',
+		'qq6Pf030N9I',
+		'M6tO6FvvXs0',
+		'TioQ0OGiz4w',
+		'bIY1jAbcnKs',
+		'FEuVOAckycU',
+	];
+
+	/* =========================
+     🧱 MONTA HTML DINÂMICO
+  ==========================*/
+
+	let slides = '';
+
+	videosShorts.forEach((id) => {
+		slides += `
+      <div class="depoimento-item">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/${id}?enablejsapi=1&controls=0&rel=0&modestbranding=1&playsinline=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    `;
+	});
+
+	const htmlSlider = `
+    <section class="depoimentos-video">
+      <div class="container">
+        <h2>Depoimentos em vídeo</h2>
+        <p>Veja o que nossos clientes estão falando dos produtos.</p>
+
+        <div class="slider-depoimentos">
+          ${slides}
+        </div>
+      </div>
+    </section>
+  `;
+
+	/* =========================
+     📍 INSERE NO DOM
+  ==========================*/
+
+	$('.pagina-inicial .vitrine-lancamento+ul').after(htmlSlider);
+
+	/* =========================
+     🎯 INICIA SLICK
+  ==========================*/
+
+	$('.slider-depoimentos').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		infinite: true,
+		adaptiveHeight: false,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: { slidesToShow: 2 },
+			},
+		],
+	});
+
+	/* =========================
+     🧠 PAUSA VÍDEOS AO TROCAR
+  ==========================*/
+
+	$('.slider-depoimentos').on('beforeChange', function () {
+		$('.slider-depoimentos iframe').each(function () {
+			this.contentWindow.postMessage(
+				'{"event":"command","func":"pauseVideo","args":""}',
+				'*'
+			);
+		});
+	});
+});
+
+
 if ($(window).width() > 768) {
 //Desktop
     $('.conteudo-topo .inferior').prepend($('.menu.superior'));
