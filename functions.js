@@ -204,7 +204,7 @@ $('.c-slide').slick({
     $carousel.slick({
       slidesToShow: 5,
       slidesToScroll: 1,
-      infinite: false,
+      infinite: true,
       arrows: true,
       dots: true,
       speed: 400,
