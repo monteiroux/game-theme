@@ -1255,6 +1255,12 @@ div#modal-pagamento.ativo {
 
 /* Compre junto */
 
+.compre-junto__atributo--lista option {
+   padding: 10px 20px;
+   background: var(--black);
+   color: var(--white);
+}
+
 .compre-junto__produto--principal .compre-junto__nome a,
 .compre-junto__produto--grade .compre-junto__nome a {
 	color: var(--white);
