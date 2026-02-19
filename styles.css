@@ -2201,6 +2201,29 @@ div#exibirFormasPagamento .btn.btn-small {
    border: 0;
 }
 
+.abas-conta li.active a {
+   background: rgba(255,255,255,.1);
+}
+
+.abas-conta li a {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.caixa-info {
+   border: 0;
+   box-shadow: none;
+}
+
+.fancybox-skin {
+   background: var(--black);
+}
+
+.alert {
+   background: rgba(255, 255, 255, .1);
+}
+
 @media screen and (max-width: 768px) {
 
    #rodape .span12.visible-phone {
@@ -2745,20 +2768,7 @@ a.atalho-menu {
 
 }
 
-.abas-conta li.active a {
-   background: rgba(255,255,255,.1);
-}
 
-.abas-conta li a {
-   display: flex;
-   align-items: center;
-   gap: 10px;
-}
-
-.caixa-info {
-   border: 0;
-   box-shadow: none;
-}
 
 @media screen and (min-width: 768px) {
 
