@@ -970,6 +970,12 @@ ul.whatsapp-dropdown-menu li {
 	padding: 0;
 }
 
+.parcelas-produto .accordion .accordion-group .accordion-heading img {
+   padding: 10px;
+   background: #fff;
+   border-radius: 6px;
+}
+
 .parcelas-produto
 	.accordion
 	.accordion-group
