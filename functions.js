@@ -2,7 +2,18 @@ $(document).ready(function(){
 
 // Ajustes gerais
 
-$('#cabecalho .conteudo-topo .inferior  ').after(`
+
+
+$('#cabecalho .span8.busca-mobile').after(`
+    <div class="h-actions hidden-phone">
+        <a href="/conta/login" class="h-user">
+            <img src="https://cdn.awsli.com.br/2923/2923109/arquivos/user.svg" alt="Minha conta">
+            <span>Entrar</span>
+        </a>
+    </div>
+`);
+
+$('#cabecalho .conteudo-topo .inferior').after(`
     <div class="h-actions visible-phone">
         <a href="/conta/login" class="h-user">
             <img src="https://cdn.awsli.com.br/2923/2923109/arquivos/user.svg" alt="Minha conta">
