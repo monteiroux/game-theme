@@ -2147,6 +2147,21 @@ div#exibirFormasPagamento .btn.btn-small {
     align-items: center;
 }
 
+/* Auto complete da busca */
+
+.ui-autocomplete {
+   background: var(--black);
+}
+
+.ui-autocomplete > li.ui-menu-item {
+   border: 0;
+   padding: 4px 10px;
+}
+
+.ui-autocomplete .ui-menu-item .img {
+   border: 0;
+}
+
 @media screen and (max-width: 768px) {
 
    #rodape .span12.visible-phone {
