@@ -2888,6 +2888,10 @@ section.depoimentos-video {
    color: var(--white);
 }
 
+.listagem-item.prod-cat-24033243 .imagem-produto:after {
+   content: "Gift Cards";  
+}
+
 .listagem-item.prod-cat-24033240 .imagem-produto:after {
   content: "PlayStation";
 }
@@ -2901,6 +2905,3 @@ section.depoimentos-video {
   content: "Nintendo";
 }
 
-.listagem-item.prod-cat-24033243 .imagem-produto:after {
-   content: "Gift Cards";  
-}
