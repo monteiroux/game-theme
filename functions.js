@@ -47,7 +47,7 @@ var whatsappNumbers = [
 var whatsappDropdownHtml = `
 <div class="whatsapp-dropdown">
     <button class="whatsapp-btn" type="button">
-        Fale conosco pelo WhatsApp
+        <i class="fa fa-whatsapp"></i> Fale conosco pelo WhatsApp
     </button>
     <ul class="whatsapp-dropdown-menu" style="display: none;">
         ${whatsappNumbers.map(function(num) {
