@@ -704,7 +704,8 @@ a.h-user {
    display: flex;
 }
 
-.pagina-produto .produto > .row-fluid > .span5 {
+.pagina-produto .produto > .row-fluid > .span5,
+.pagina-produto .produto > .row-fluid > .span6:nth-child(2) {
    max-width: 500px;
    padding: 24px 56px;
    position: sticky;
