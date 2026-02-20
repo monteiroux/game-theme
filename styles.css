@@ -2244,6 +2244,10 @@ div#exibirFormasPagamento .btn.btn-small {
    display: none;
 }
 
+.pagina-categoria #listagemProdutos {
+   padding: 0;
+}
+
 @media screen and (max-width: 768px) {
 
    .pagina-login #corpo > .conteiner {
@@ -2658,11 +2662,6 @@ a.atalho-menu {
 .pagina-categoria .breadcrumbs {
    border: 0;
    margin: 0;
-}
-
-
-.pagina-categoria #listagemProdutos {
-   padding: 0;
 }
 
 #modalFiltros.modal.fade {
