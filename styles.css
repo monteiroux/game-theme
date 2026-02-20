@@ -37,6 +37,10 @@ h6,
    color: var(--white);
 }
 
+html {
+   background: var(--black);
+}
+
 /* ------------------- Components */
 
 /* Container geral */
