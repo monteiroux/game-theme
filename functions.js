@@ -585,6 +585,26 @@ $(function () {
   
   });
 
+  // Remove texto da bandeira
+
+  $(function () {
+
+    $('.bandeiras-produto .bandeira-promocao').each(function () {
+  
+      let texto = $(this).text();
+  
+      // remove a palavra "Desconto"
+      texto = texto.replace(/desconto/i, '').trim();
+  
+      // pega apenas o número
+      let numero = texto.replace('%', '').trim();
+  
+      // monta novo formato
+      $(this).text(`-${numero}%`);
+  
+    });
+  
+  });
 
 if ($(window).width() > 768) {
 //Desktop
