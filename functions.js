@@ -411,6 +411,105 @@ $(function () {
 	});
 });
 
+// FAQ
+
+$(function () {
+
+    /* =========================
+       📋 PERGUNTAS EDITÁVEIS
+    ==========================*/
+    const faqItems = [
+      {
+        pergunta: "Quais formas de pagamento vocês aceitam?",
+        resposta: "Aceitamos cartão de crédito, PIX e boleto bancário."
+      },
+      {
+        pergunta: "Como recebo meu jogo após a compra?",
+        resposta: "Você receberá o código de ativação por e-mail imediatamente após a confirmação do pagamento."
+      },
+      {
+        pergunta: "Os jogos são originais?",
+        resposta: "Sim. Todos os jogos são originais e possuem ativação oficial nas plataformas correspondentes."
+      },
+      {
+        pergunta: "Em quanto tempo meu pedido é liberado?",
+        resposta: "Pedidos pagos via PIX ou cartão são liberados automaticamente após aprovação."
+      },
+      {
+        pergunta: "Não recebi meu código. O que faço?",
+        resposta: "Verifique sua caixa de spam ou entre em contato com nosso suporte informando o número do pedido."
+      }
+    ];
+  
+  
+    /* =========================
+       🧱 MONTA HTML
+    ==========================*/
+    let faqHTML = `
+      <section class="faq-section">
+        <div class="faq-container">
+          <h2>FAQ</h2>
+          <p class="faq-subtitle">Dúvidas frequentes</p>
+          <div class="faq-list">
+    `;
+  
+    faqItems.forEach((item, index) => {
+  
+      faqHTML += `
+        <div class="faq-item ${item.ativo ? 'active' : ''}">
+          <div class="faq-pergunta">
+            <span>${item.pergunta}</span>
+            <div class="faq-icon">${item.ativo ? '−' : '+'}</div>
+          </div>
+  
+          <div class="faq-resposta" style="${item.ativo ? 'display:block' : 'display:none'}">
+            ${item.resposta}
+          </div>
+        </div>
+      `;
+    });
+  
+    faqHTML += `
+          </div>
+        </div>
+      </section>
+    `;
+  
+  
+    /* =========================
+       📍 INSERE NA HOME
+    ==========================*/
+    $('.pagina-inicial #corpo').after(faqHTML);
+  
+  
+    /* =========================
+       🎯 COMPORTAMENTO ACCORDION
+    ==========================*/
+    $(document).on('click', '.faq-pergunta', function () {
+  
+      const item = $(this).closest('.faq-item');
+  
+      // fecha outros
+      $('.faq-item').not(item).removeClass('active')
+        .find('.faq-resposta').slideUp(250);
+  
+      $('.faq-item').not(item)
+        .find('.faq-icon').text('+');
+  
+      // toggle atual
+      item.toggleClass('active');
+  
+      item.find('.faq-resposta').slideToggle(250);
+  
+      item.find('.faq-icon').text(
+        item.hasClass('active') ? '−' : '+'
+      );
+  
+    });
+  
+  });
+  
+
 
 if ($(window).width() > 768) {
 //Desktop

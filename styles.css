@@ -2904,3 +2904,83 @@ section.depoimentos-video {
   content: "Nintendo";
 }
 
+/* FAQ */
+
+.faq-container {
+	padding: 0 48px;
+}
+
+section.faq-section {
+	width: 100%;
+}
+
+.faq-list {
+	margin-top: 48px;
+}
+
+.faq-container h2 {
+	font-size: 28px;
+	margin: 0;
+}
+
+.faq-container p {
+	font-size: 16px;
+}
+
+.faq-item {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+	gap: 24px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-pergunta {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.faq-pergunta span {
+	font-size: 22px;
+	font-weight: 500;
+	transition: all 0.4s;
+	line-height: 100%;
+}
+
+.faq-pergunta .faq-icon {
+	font-size: 32px;
+}
+
+.faq-container * {
+	color: var(--white);
+}
+
+.faq-resposta {
+	font-size: 16px;
+	opacity: 0.7;
+}
+
+.faq-item.active .faq-pergunta span {
+	font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+	.faq-container {
+		padding: 0 15px;
+	}
+
+	.faq-pergunta span {
+		font-size: 18px;
+	}
+
+	.faq-pergunta {
+		gap: 20px;
+	}
+
+	.faq-item.active .faq-pergunta span {
+		font-size: 32px;
+	}
+}
