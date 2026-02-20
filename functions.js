@@ -510,6 +510,81 @@ $(function () {
   });
   
 
+  $(function () {
+
+    /* =========================
+       🧩 BENEFÍCIOS EDITÁVEIS
+    ==========================*/
+    const beneficios = [
+      {
+        icone: "🎧",
+        titulo: "Atendimento ao cliente",
+        texto: "Conte com suporte 24/7"
+      },
+      {
+        icone: "📦",
+        titulo: "Frete rápido e grátis",
+        texto: "Frete grátis em pedidos de US$150 ou mais."
+      },
+      {
+        icone: "👥",
+        titulo: "Indique um amigo",
+        texto: "Indique um amigo e ganhem 15% de desconto cada um."
+      },
+      {
+        icone: "🔒",
+        titulo: "Pagamento seguro",
+        texto: "Suas informações de pagamento são processadas com segurança."
+      }
+    ];
+  
+  
+    /* =========================
+       🧱 MONTA HTML
+    ==========================*/
+    let itensHTML = "";
+  
+    beneficios.forEach((item, index) => {
+  
+      itensHTML += `
+        <div class="beneficio-item">
+          <div class="beneficio-icone">${item.icone}</div>
+  
+          <div class="beneficio-texto">
+            <strong>${item.titulo}</strong>
+            <span>${item.texto}</span>
+          </div>
+        </div>
+      `;
+  
+      // divisória (menos no último)
+      if(index < beneficios.length - 1){
+        itensHTML += `<div class="beneficio-divider"></div>`;
+      }
+    });
+  
+  
+    const barraBeneficios = `
+      <section class="barra-beneficios">
+        <div class="beneficios-container">
+          ${itensHTML}
+        </div>
+      </section>
+    `;
+  
+  
+    /* =========================
+       📍 INSERÇÃO INTELIGENTE
+    ==========================*/
+  
+    if ($('#barraNewsletter').length) {
+      $('#barraNewsletter').before(barraBeneficios);
+    } else {
+      $('#rodape').before(barraBeneficios);
+    }
+  
+  });
+
 
 if ($(window).width() > 768) {
 //Desktop

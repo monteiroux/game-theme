@@ -2911,7 +2911,8 @@ section.depoimentos-video {
 }
 
 section.faq-section {
-	width: 100%;
+   width: 100%;
+   margin-bottom: 24px;
 }
 
 .faq-list {
@@ -2982,5 +2983,65 @@ section.faq-section {
 
 	.faq-item.active .faq-pergunta span {
 		font-size: 32px;
+	}
+}
+
+
+/* Benefícios */
+
+.beneficio-item {
+	display: flex;
+	gap: 10px;
+}
+
+.beneficio-item .beneficio-texto {
+	display: flex;
+	flex-direction: column;
+}
+
+.beneficios-container {
+	padding: 48px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.beneficio-item .beneficio-texto strong {
+	font-size: 18px;
+}
+
+.beneficio-item .beneficio-texto span {
+	font-size: 14px;
+}
+
+.beneficio-divider {
+	height: 52px;
+	display: block;
+	width: 1px;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.beneficio-icone {
+	font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+	.beneficios-container {
+		padding: 16px;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.beneficio-item {
+		width: 100%;
+	}
+
+	.beneficio-divider {
+		width: 100%;
+		height: 1px;
+	}
+
+	section.barra-beneficios {
+		margin: 24px 0;
 	}
 }
