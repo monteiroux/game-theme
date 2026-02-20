@@ -2660,6 +2660,11 @@ a.atalho-menu {
    margin: 0;
 }
 
+
+.pagina-categoria #listagemProdutos {
+   padding: 0;
+}
+
 #modalFiltros.modal.fade {
    top: 0;
    right: -150%;
@@ -2860,4 +2865,42 @@ section.depoimentos-video {
 .depoimentos-video p {
     font-size: 16px;
     margin-bottom: 32px;
+}
+
+
+/* Badges nos produtos */
+.listagem-item .imagem-produto:after {
+   content: "";
+   display: block;
+   z-index: 1;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   height: 38px;
+   background: rgba(0, 0, 0, 0.4);
+   backdrop-filter: blur(5px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: var(--white);
+}
+
+.listagem-item.prod-cat-24033240 .imagem-produto:after {
+  content: "PlayStation";
+}
+
+
+.listagem-item.prod-cat-24033241 .imagem-produto:after {
+  content: "Xbox";
+}
+
+.listagem-item.prod-cat-24033242 .imagem-produto:after {
+  content: "Nintendo";
+}
+
+.listagem-item.prod-cat-24033243 .imagem-produto:after {
+   content: "Gift Cards";  
 }
