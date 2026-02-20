@@ -1060,6 +1060,8 @@ ul.whatsapp-dropdown-menu li {
 .thumbs-vertical {
    width: 90px;
    padding: 48px;
+   z-index: 1;
+   position: relative;
 }
 
 .thumbs-vertical .elastislide-carousel ul li a {
@@ -2253,6 +2255,10 @@ div#exibirFormasPagamento .btn.btn-small {
 }
 
 @media screen and (max-width: 768px) {
+
+   .pagina-produto .zm-viewer {
+      display: none !important;
+  }
 
    .h-actions.hidden-phone {
       display: none !important;
