@@ -2254,6 +2254,10 @@ div#exibirFormasPagamento .btn.btn-small {
 
 @media screen and (max-width: 768px) {
 
+   .h-actions.hidden-phone {
+      display: none !important;
+  }
+
    .pagina-login #corpo > .conteiner {
       padding: 16px;
   }
